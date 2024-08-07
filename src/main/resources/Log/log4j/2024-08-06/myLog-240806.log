@@ -1,0 +1,531 @@
+2024-08-06 18:15:18,380: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Before Navigate To...https://10.8.162.177[ENG]
+2024-08-06 18:15:18,380: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Before Navigate To...https://10.8.162.150[JPN]
+2024-08-06 18:15:18,794: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Login to main page...
+2024-08-06 18:15:18,794: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Login to main page...
+2024-08-06 18:15:28,866: - INFO - TEST: TEST > Element Not Found! >> Ready to login...
+2024-08-06 18:15:29,086: - INFO - TEST: TEST > Element Not Found! >> Ready to login...
+2024-08-06 18:15:29,550: - INFO - TEST: test_Step01_Login_JPN > [Pass]Take screenshot...
+2024-08-06 18:15:29,625: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Switch to 'Non-Config' mode...
+2024-08-06 18:15:29,747: - INFO - TEST: test_Step01_Login_ENG > [Pass]Take screenshot...
+2024-08-06 18:15:29,819: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Switch to 'Non-Config' mode...
+2024-08-06 18:15:29,882: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Data created for [JPN]!
+2024-08-06 18:15:29,882: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Data created for [ENG]!
+2024-08-06 18:15:32,324: - INFO - TEST: TEST > 'HOME' Menu: Dashboard
+2024-08-06 18:15:32,366: - INFO - TEST: TEST > 'HOME' Menu: System
+2024-08-06 18:15:32,404: - INFO - TEST: TEST > 'HOME' Menu: Access Points
+2024-08-06 18:15:32,453: - INFO - TEST: TEST > 'HOME' Menu: Capture ATP
+2024-08-06 18:15:32,492: - INFO - TEST: TEST > 'HOME' Menu: Topology
+2024-08-06 18:15:32,529: - INFO - TEST: TEST > 'HOME' Menu: Legal Information
+2024-08-06 18:15:32,564: - INFO - TEST: TEST > 'HOME' Menu: API
+2024-08-06 18:15:32,565: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:32,566: - INFO - TEST: TEST > 'HOME' Menu: No duplicated data to the TOP
+2024-08-06 18:15:32,566: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:32,567: - INFO - TEST: TEST > ALL MENU: 7
+2024-08-06 18:15:32,853: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Data updated for [ENG]!
+2024-08-06 18:15:32,854: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Top menu 'HOME' is done!
+2024-08-06 18:15:32,856: - INFO - TEST: TEST > 'HOME' Menu: ダッシュボード >> Dashboard
+2024-08-06 18:15:32,938: - INFO - TEST: TEST > 'HOME' Menu: システム >> System
+2024-08-06 18:15:32,956: - INFO - TEST: TEST > 'HOME' Menu: アクセス ポイント >> Access Points
+2024-08-06 18:15:32,974: - INFO - TEST: TEST > 'HOME' Menu: キャプチャ ATP >> Capture ATP
+2024-08-06 18:15:32,993: - INFO - TEST: TEST > 'HOME' Menu: トポロジ >> Topology
+2024-08-06 18:15:33,011: - INFO - TEST: TEST > 'HOME' Menu: 法的情報 >> Legal Information
+2024-08-06 18:15:33,033: - INFO - TEST: TEST > 'HOME' Menu: API >> API
+2024-08-06 18:15:33,033: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:33,034: - INFO - TEST: TEST > 'HOME' Menu: No duplicated data to the TOP
+2024-08-06 18:15:33,034: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:33,034: - INFO - TEST: TEST > ALL MENU: 7
+2024-08-06 18:15:33,053: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-06 18:15:33,054: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Top menu 'HOME' is done!
+2024-08-06 18:15:36,143: - INFO - TEST: TEST > 'MONITOR' Menu: リアルタイム グラフ >> Real-Time Charts
+2024-08-06 18:15:36,162: - INFO - TEST: TEST > 'MONITOR' Menu: システム監視 >> System Monitor
+2024-08-06 18:15:36,188: - INFO - TEST: TEST > 'MONITOR' Menu: プロトコル監視 >> Protocol Monitor
+2024-08-06 18:15:36,208: - INFO - TEST: TEST > 'MONITOR' Menu: ユーザ監視 >> User Monitor
+2024-08-06 18:15:36,227: - INFO - TEST: TEST > 'MONITOR' Menu: 帯域幅管理監視 >> BWM Monitor
+2024-08-06 18:15:36,248: - INFO - TEST: TEST > 'MONITOR' Menu: AppFlow >> AppFlow
+2024-08-06 18:15:36,265: - INFO - TEST: TEST > 'MONITOR' Menu: AppFlow 報告 >> AppFlow Report
+2024-08-06 18:15:36,284: - INFO - TEST: TEST > 'MONITOR' Menu: AppFlow 監視 >> AppFlow Monitor
+2024-08-06 18:15:36,304: - INFO - TEST: TEST > 'MONITOR' Menu: CTA レポート >> CTA Report
+2024-08-06 18:15:36,322: - INFO - TEST: TEST > 'MONITOR' Menu: SDWAN >> SDWAN
+2024-08-06 18:15:36,342: - INFO - TEST: TEST > 'MONITOR' Menu: SDWAN 監視 >> SDWAN Monitor
+2024-08-06 18:15:36,362: - INFO - TEST: TEST > 'MONITOR' Menu: SD-WAN 接続 >> SD-WAN Connections
+2024-08-06 18:15:36,381: - INFO - TEST: TEST > 'MONITOR' Menu: ログ >> Logs
+2024-08-06 18:15:36,401: - INFO - TEST: TEST > 'MONITOR' Menu: システム ログ >> System Logs
+2024-08-06 18:15:36,419: - INFO - TEST: TEST > 'MONITOR' Menu: 監査ログ >> Auditing Logs
+2024-08-06 18:15:36,442: - INFO - TEST: TEST > 'MONITOR' Menu: 脅威ログ >> Threat Logs
+2024-08-06 18:15:36,459: - INFO - TEST: TEST > 'MONITOR' Menu: ツールと監視 >> Tools & Monitors
+2024-08-06 18:15:36,477: - INFO - TEST: TEST > 'MONITOR' Menu: パケット監視 >> Packet Monitor
+2024-08-06 18:15:36,495: - INFO - TEST: TEST > 'MONITOR' Menu: 接続 >> Connections
+2024-08-06 18:15:36,512: - INFO - TEST: TEST > 'MONITOR' Menu: コア 0 プロセス >> Core 0 Processes
+2024-08-06 18:15:36,531: - INFO - TEST: TEST > 'MONITOR' Menu: パケット再生 >> Packet Replay
+2024-08-06 18:15:36,532: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:36,532: - INFO - TEST: TEST > 'MONITOR' Menu: No duplicated data to the TOP
+2024-08-06 18:15:36,533: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:36,533: - INFO - TEST: TEST > ALL MENU: 21
+2024-08-06 18:15:36,559: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-06 18:15:36,560: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Top menu 'MONITOR' is done!
+2024-08-06 18:15:37,685: - INFO - TEST: TEST > 'MONITOR' Menu: Real-Time Charts
+2024-08-06 18:15:37,728: - INFO - TEST: TEST > 'MONITOR' Menu: System Monitor
+2024-08-06 18:15:37,765: - INFO - TEST: TEST > 'MONITOR' Menu: Protocol Monitor
+2024-08-06 18:15:37,803: - INFO - TEST: TEST > 'MONITOR' Menu: User Monitor
+2024-08-06 18:15:37,837: - INFO - TEST: TEST > 'MONITOR' Menu: BWM Monitor
+2024-08-06 18:15:37,873: - INFO - TEST: TEST > 'MONITOR' Menu: AppFlow
+2024-08-06 18:15:37,907: - INFO - TEST: TEST > 'MONITOR' Menu: AppFlow Report
+2024-08-06 18:15:37,945: - INFO - TEST: TEST > 'MONITOR' Menu: AppFlow Monitor
+2024-08-06 18:15:37,981: - INFO - TEST: TEST > 'MONITOR' Menu: CTA Report
+2024-08-06 18:15:38,015: - INFO - TEST: TEST > 'MONITOR' Menu: SDWAN
+2024-08-06 18:15:38,049: - INFO - TEST: TEST > 'MONITOR' Menu: SDWAN Monitor
+2024-08-06 18:15:38,095: - INFO - TEST: TEST > 'MONITOR' Menu: SD-WAN Connections
+2024-08-06 18:15:38,132: - INFO - TEST: TEST > 'MONITOR' Menu: Logs
+2024-08-06 18:15:38,169: - INFO - TEST: TEST > 'MONITOR' Menu: System Logs
+2024-08-06 18:15:38,203: - INFO - TEST: TEST > 'MONITOR' Menu: Auditing Logs
+2024-08-06 18:15:38,236: - INFO - TEST: TEST > 'MONITOR' Menu: Threat Logs
+2024-08-06 18:15:38,275: - INFO - TEST: TEST > 'MONITOR' Menu: Tools & Monitors
+2024-08-06 18:15:38,309: - INFO - TEST: TEST > 'MONITOR' Menu: Packet Monitor
+2024-08-06 18:15:38,343: - INFO - TEST: TEST > 'MONITOR' Menu: Connections
+2024-08-06 18:15:38,377: - INFO - TEST: TEST > 'MONITOR' Menu: Core 0 Processes
+2024-08-06 18:15:38,414: - INFO - TEST: TEST > 'MONITOR' Menu: Packet Replay
+2024-08-06 18:15:38,415: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:38,415: - INFO - TEST: TEST > 'MONITOR' Menu: No duplicated data to the TOP
+2024-08-06 18:15:38,415: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:38,416: - INFO - TEST: TEST > ALL MENU: 21
+2024-08-06 18:15:38,431: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Data updated for [ENG]!
+2024-08-06 18:15:38,432: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Top menu 'MONITOR' is done!
+2024-08-06 18:15:40,131: - INFO - TEST: TEST > 'DEVICE' Menu: 設定 >> Settings
+2024-08-06 18:15:40,155: - INFO - TEST: TEST > 'DEVICE' Menu: ライセンス >> Licenses
+2024-08-06 18:15:40,172: - INFO - TEST: TEST > 'DEVICE' Menu: 管理 >> Administration
+2024-08-06 18:15:40,195: - INFO - TEST: TEST > 'DEVICE' Menu: 時間 >> Time
+2024-08-06 18:15:40,220: - INFO - TEST: TEST > 'DEVICE' Menu: 証明書 >> Certificates
+2024-08-06 18:15:40,241: - INFO - TEST: TEST > 'DEVICE' Menu: SNMP >> SNMP
+2024-08-06 18:15:40,265: - INFO - TEST: TEST > 'DEVICE' Menu: ファームウェアと設定 >> Firmware and Settings
+2024-08-06 18:15:40,284: - INFO - TEST: TEST > 'DEVICE' Menu: 記憶装置 >> Storage
+2024-08-06 18:15:40,302: - INFO - TEST: TEST > 'DEVICE' Menu: 再起動 >> Restart
+2024-08-06 18:15:40,319: - INFO - TEST: TEST > 'DEVICE' Menu: 高可用性 >> High Availability
+2024-08-06 18:15:40,337: - INFO - TEST: TEST > 'DEVICE' Menu: 状況 >> Status
+2024-08-06 18:15:40,354: - INFO - TEST: TEST > 'DEVICE' Menu: 設定 >> Settings
+2024-08-06 18:15:40,373: - INFO - TEST: TEST > 'DEVICE' Menu: 詳細 >> Advanced
+2024-08-06 18:15:40,391: - INFO - TEST: TEST > 'DEVICE' Menu: 監視 >> Monitoring
+2024-08-06 18:15:40,408: - INFO - TEST: TEST > 'DEVICE' Menu: ユーザ >> Users
+2024-08-06 18:15:40,428: - INFO - TEST: TEST > 'DEVICE' Menu: 状況 >> Status
+2024-08-06 18:15:40,445: - INFO - TEST: TEST > 'DEVICE' Menu: 設定 >> Settings
+2024-08-06 18:15:40,462: - INFO - TEST: TEST > 'DEVICE' Menu: パーティション >> Partitions
+2024-08-06 18:15:40,479: - INFO - TEST: TEST > 'DEVICE' Menu: ローカル ユーザとグループ >> Local Users & Groups
+2024-08-06 18:15:40,495: - INFO - TEST: TEST > 'DEVICE' Menu: ゲスト サービス >> Guest Services
+2024-08-06 18:15:40,511: - INFO - TEST: TEST > 'DEVICE' Menu: ゲスト アカウント >> Guest Accounts
+2024-08-06 18:15:40,527: - INFO - TEST: TEST > 'DEVICE' Menu: ゲスト状況 >> Guest Status
+2024-08-06 18:15:40,540: - INFO - TEST: TEST > 'DEVICE' Menu: Settings
+2024-08-06 18:15:40,543: - INFO - TEST: TEST > 'DEVICE' Menu: AppFlow >> AppFlow
+2024-08-06 18:15:40,558: - INFO - TEST: TEST > 'DEVICE' Menu: フロー報告 >> Flow Reporting
+2024-08-06 18:15:40,575: - INFO - TEST: TEST > 'DEVICE' Menu: AppFlow エージェント >> AppFlow Agent
+2024-08-06 18:15:40,579: - INFO - TEST: TEST > 'DEVICE' Menu: Licenses
+2024-08-06 18:15:40,592: - INFO - TEST: TEST > 'DEVICE' Menu: ネットワーク アクセス制御 >> Network Access Control
+2024-08-06 18:15:40,609: - INFO - TEST: TEST > 'DEVICE' Menu: 設定 >> Settings
+2024-08-06 18:15:40,617: - INFO - TEST: TEST > 'DEVICE' Menu: Administration
+2024-08-06 18:15:40,628: - INFO - TEST: TEST > 'DEVICE' Menu: セッション >> Sessions
+2024-08-06 18:15:40,647: - INFO - TEST: TEST > 'DEVICE' Menu: ログ >> Log
+2024-08-06 18:15:40,662: - INFO - TEST: TEST > 'DEVICE' Menu: Time
+2024-08-06 18:15:40,662: - INFO - TEST: TEST > 'DEVICE' Menu: 設定 >> Settings
+2024-08-06 18:15:40,679: - INFO - TEST: TEST > 'DEVICE' Menu: Syslog >> Syslog
+2024-08-06 18:15:40,694: - INFO - TEST: TEST > 'DEVICE' Menu: 自動化 >> Automation
+2024-08-06 18:15:40,694: - INFO - TEST: TEST > 'DEVICE' Menu: Certificates
+2024-08-06 18:15:40,711: - INFO - TEST: TEST > 'DEVICE' Menu: 名前解決 >> Name Resolution
+2024-08-06 18:15:40,726: - INFO - TEST: TEST > 'DEVICE' Menu: SNMP
+2024-08-06 18:15:40,727: - INFO - TEST: TEST > 'DEVICE' Menu: レポート >> Reports
+2024-08-06 18:15:40,745: - INFO - TEST: TEST > 'DEVICE' Menu: AWS >> AWS
+2024-08-06 18:15:40,760: - INFO - TEST: TEST > 'DEVICE' Menu: 診断 >> Diagnostics
+2024-08-06 18:15:40,762: - INFO - TEST: TEST > 'DEVICE' Menu: Firmware and Settings
+2024-08-06 18:15:40,777: - INFO - TEST: TEST > 'DEVICE' Menu: テクニカル サポート レポート >> Tech Support Report
+2024-08-06 18:15:40,792: - INFO - TEST: TEST > 'DEVICE' Menu: ネットワーク設定の確認 >> Check Network Settings
+2024-08-06 18:15:40,792: - INFO - TEST: TEST > 'DEVICE' Menu: Storage
+2024-08-06 18:15:40,809: - INFO - TEST: TEST > 'DEVICE' Menu: DNS 名の調査 >> DNS Name Lookup
+2024-08-06 18:15:40,826: - INFO - TEST: TEST > 'DEVICE' Menu: Restart
+2024-08-06 18:15:40,826: - INFO - TEST: TEST > 'DEVICE' Menu: ネットワーク パス >> Network Path
+2024-08-06 18:15:40,843: - INFO - TEST: TEST > 'DEVICE' Menu: Ping >> Ping
+2024-08-06 18:15:40,857: - INFO - TEST: TEST > 'DEVICE' Menu: High Availability
+2024-08-06 18:15:40,858: - INFO - TEST: TEST > 'DEVICE' Menu: ルート追跡 >> Trace Route
+2024-08-06 18:15:40,874: - INFO - TEST: TEST > 'DEVICE' Menu: リアルタイム ブラックリスト >> Real-Time Blacklist
+2024-08-06 18:15:40,893: - INFO - TEST: TEST > 'DEVICE' Menu: Status
+2024-08-06 18:15:40,893: - INFO - TEST: TEST > 'DEVICE' Menu: 逆引き名前調査 >> Reverse Name Lookup
+2024-08-06 18:15:40,909: - INFO - TEST: TEST > 'DEVICE' Menu: 上位接続 >> Connection TopX
+2024-08-06 18:15:40,926: - INFO - TEST: TEST > 'DEVICE' Menu: Settings
+2024-08-06 18:15:40,929: - INFO - TEST: TEST > 'DEVICE' Menu: 地域とボットネット >> Geo and Botnet
+2024-08-06 18:15:40,944: - INFO - TEST: TEST > 'DEVICE' Menu: MX とバナー >> MX and Banner
+2024-08-06 18:15:40,959: - INFO - TEST: TEST > 'DEVICE' Menu: Advanced
+2024-08-06 18:15:40,961: - INFO - TEST: TEST > 'DEVICE' Menu: グリッド確認 >> GRID Check
+2024-08-06 18:15:40,976: - INFO - TEST: TEST > 'DEVICE' Menu: URL 格付け要求 >> URL Rating Request
+2024-08-06 18:15:40,992: - INFO - TEST: TEST > 'DEVICE' Menu: Monitoring
+2024-08-06 18:15:40,992: - INFO - TEST: TEST > 'DEVICE' Menu: PMTU 検出 >> PMTU Discovery
+2024-08-06 18:15:41,008: - INFO - TEST: TEST > 'DEVICE' Menu: スイッチ診断 >> Switch Diagnostics
+2024-08-06 18:15:41,023: - INFO - TEST: TEST > 'DEVICE' Menu: Users
+2024-08-06 18:15:41,023: - INFO - TEST: TEST > 'DEVICE' Menu: スイッチ ネットワーク >> Switch Network
+2024-08-06 18:15:41,040: - INFO - TEST: TEST > 'DEVICE' Menu: 概要 >> Overview
+2024-08-06 18:15:41,056: - INFO - TEST: TEST > 'DEVICE' Menu: Status
+2024-08-06 18:15:41,057: - INFO - TEST: TEST > 'DEVICE' Menu: スイッチ >> Switches
+2024-08-06 18:15:41,073: - INFO - TEST: TEST > 'DEVICE' Menu: アクセス ポイント >> Access Points
+2024-08-06 18:15:41,089: - INFO - TEST: TEST > 'DEVICE' Menu: 設定 >> Settings
+2024-08-06 18:15:41,091: - INFO - TEST: TEST > 'DEVICE' Menu: Settings
+2024-08-06 18:15:41,104: - INFO - TEST: TEST > 'DEVICE' Menu: ファームウェア管理 >> Firmware Management
+2024-08-06 18:15:41,120: - INFO - TEST: TEST > 'DEVICE' Menu: フロア プランの表示 >> Floor Plan View
+2024-08-06 18:15:41,122: - INFO - TEST: TEST > 'DEVICE' Menu: Local Users & Groups
+2024-08-06 18:15:41,138: - INFO - TEST: TEST > 'DEVICE' Menu: ステーション状況 >> Station Status
+2024-08-06 18:15:41,155: - INFO - TEST: TEST > 'DEVICE' Menu: IDS >> IDS
+2024-08-06 18:15:41,155: - INFO - TEST: TEST > 'DEVICE' Menu: Guest Services
+2024-08-06 18:15:41,172: - INFO - TEST: TEST > 'DEVICE' Menu: 高度な IDP >> Advanced IDP
+2024-08-06 18:15:41,189: - INFO - TEST: TEST > 'DEVICE' Menu: Guest Accounts
+2024-08-06 18:15:41,189: - INFO - TEST: TEST > 'DEVICE' Menu: パケット キャプチャ >> Packet Capture
+2024-08-06 18:15:41,207: - INFO - TEST: TEST > 'DEVICE' Menu: 仮想アクセス ポイント >> Virtual Access Point
+2024-08-06 18:15:41,222: - INFO - TEST: TEST > 'DEVICE' Menu: Guest Status
+2024-08-06 18:15:41,223: - INFO - TEST: TEST > 'DEVICE' Menu: RF 監視 >> RF Monitoring
+2024-08-06 18:15:41,239: - INFO - TEST: TEST > 'DEVICE' Menu: RF 解析 >> RF Analysis
+2024-08-06 18:15:41,255: - INFO - TEST: TEST > 'DEVICE' Menu: AppFlow
+2024-08-06 18:15:41,255: - INFO - TEST: TEST > 'DEVICE' Menu: RF スペクトラム >> RF Spectrum
+2024-08-06 18:15:41,270: - INFO - TEST: TEST > 'DEVICE' Menu: FairNet >> FairNet
+2024-08-06 18:15:41,285: - INFO - TEST: TEST > 'DEVICE' Menu: Flow Reporting
+2024-08-06 18:15:41,286: - INFO - TEST: TEST > 'DEVICE' Menu: Wi-Fi マルチメディア >> Wi-Fi Multimedia
+2024-08-06 18:15:41,303: - INFO - TEST: TEST > 'DEVICE' Menu: 3G/4G/LTE WWAN >> 3G/4G/LTE WWAN
+2024-08-06 18:15:41,319: - INFO - TEST: TEST > 'DEVICE' Menu: AppFlow Agent
+2024-08-06 18:15:41,320: - INFO - TEST: TEST > 'DEVICE' Menu: Bluetooth LE >> Bluetooth LE
+2024-08-06 18:15:41,334: - INFO - TEST: TEST > 'DEVICE' Menu: 無線管理 >> Radio Management
+2024-08-06 18:15:41,349: - INFO - TEST: TEST > 'DEVICE' Menu: WWAN >> WWAN
+2024-08-06 18:15:41,349: - INFO - TEST: TEST > 'DEVICE' Menu: Network Access Control
+2024-08-06 18:15:41,349: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:41,351: - INFO - TEST: TEST > 'DEVICE' Menu: Settings >> Settings (TOP)
+2024-08-06 18:15:41,351: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:41,351: - INFO - TEST: TEST > ALL MENU: 72
+2024-08-06 18:15:41,387: - INFO - TEST: TEST > 'DEVICE' Menu: Settings
+2024-08-06 18:15:41,391: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-06 18:15:41,392: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Top menu 'DEVICE' is done!
+2024-08-06 18:15:41,420: - INFO - TEST: TEST > 'DEVICE' Menu: Sessions
+2024-08-06 18:15:41,454: - INFO - TEST: TEST > 'DEVICE' Menu: Log
+2024-08-06 18:15:41,488: - INFO - TEST: TEST > 'DEVICE' Menu: Settings
+2024-08-06 18:15:41,518: - INFO - TEST: TEST > 'DEVICE' Menu: Syslog
+2024-08-06 18:15:41,558: - INFO - TEST: TEST > 'DEVICE' Menu: Automation
+2024-08-06 18:15:41,590: - INFO - TEST: TEST > 'DEVICE' Menu: Name Resolution
+2024-08-06 18:15:41,623: - INFO - TEST: TEST > 'DEVICE' Menu: Reports
+2024-08-06 18:15:41,658: - INFO - TEST: TEST > 'DEVICE' Menu: AWS
+2024-08-06 18:15:41,692: - INFO - TEST: TEST > 'DEVICE' Menu: Diagnostics
+2024-08-06 18:15:41,727: - INFO - TEST: TEST > 'DEVICE' Menu: Tech Support Report
+2024-08-06 18:15:41,764: - INFO - TEST: TEST > 'DEVICE' Menu: Check Network Settings
+2024-08-06 18:15:41,797: - INFO - TEST: TEST > 'DEVICE' Menu: DNS Name Lookup
+2024-08-06 18:15:41,831: - INFO - TEST: TEST > 'DEVICE' Menu: Network Path
+2024-08-06 18:15:41,865: - INFO - TEST: TEST > 'DEVICE' Menu: Ping
+2024-08-06 18:15:41,898: - INFO - TEST: TEST > 'DEVICE' Menu: Trace Route
+2024-08-06 18:15:41,931: - INFO - TEST: TEST > 'DEVICE' Menu: Real-Time Blacklist
+2024-08-06 18:15:41,965: - INFO - TEST: TEST > 'DEVICE' Menu: Reverse Name Lookup
+2024-08-06 18:15:41,999: - INFO - TEST: TEST > 'DEVICE' Menu: Connection TopX
+2024-08-06 18:15:42,034: - INFO - TEST: TEST > 'DEVICE' Menu: Geo and Botnet
+2024-08-06 18:15:42,067: - INFO - TEST: TEST > 'DEVICE' Menu: MX and Banner
+2024-08-06 18:15:42,102: - INFO - TEST: TEST > 'DEVICE' Menu: GRID Check
+2024-08-06 18:15:42,134: - INFO - TEST: TEST > 'DEVICE' Menu: URL Rating Request
+2024-08-06 18:15:42,166: - INFO - TEST: TEST > 'DEVICE' Menu: PMTU Discovery
+2024-08-06 18:15:42,201: - INFO - TEST: TEST > 'DEVICE' Menu: Switch Diagnostics
+2024-08-06 18:15:42,232: - INFO - TEST: TEST > 'DEVICE' Menu: Switch Network
+2024-08-06 18:15:42,264: - INFO - TEST: TEST > 'DEVICE' Menu: Overview
+2024-08-06 18:15:42,299: - INFO - TEST: TEST > 'DEVICE' Menu: Switches
+2024-08-06 18:15:42,330: - INFO - TEST: TEST > 'DEVICE' Menu: Access Points
+2024-08-06 18:15:42,362: - INFO - TEST: TEST > 'DEVICE' Menu: Settings
+2024-08-06 18:15:42,394: - INFO - TEST: TEST > 'DEVICE' Menu: Firmware Management
+2024-08-06 18:15:42,429: - INFO - TEST: TEST > 'DEVICE' Menu: Floor Plan View
+2024-08-06 18:15:42,463: - INFO - TEST: TEST > 'DEVICE' Menu: Station Status
+2024-08-06 18:15:42,496: - INFO - TEST: TEST > 'DEVICE' Menu: IDS
+2024-08-06 18:15:42,531: - INFO - TEST: TEST > 'DEVICE' Menu: Advanced IDP
+2024-08-06 18:15:42,563: - INFO - TEST: TEST > 'DEVICE' Menu: Packet Capture
+2024-08-06 18:15:42,594: - INFO - TEST: TEST > 'DEVICE' Menu: Virtual Access Point
+2024-08-06 18:15:42,627: - INFO - TEST: TEST > 'DEVICE' Menu: RF Monitoring
+2024-08-06 18:15:42,668: - INFO - TEST: TEST > 'DEVICE' Menu: RF Analysis
+2024-08-06 18:15:42,700: - INFO - TEST: TEST > 'DEVICE' Menu: RF Spectrum
+2024-08-06 18:15:42,764: - INFO - TEST: TEST > 'DEVICE' Menu: FairNet
+2024-08-06 18:15:42,873: - INFO - TEST: TEST > 'DEVICE' Menu: Wi-Fi Multimedia
+2024-08-06 18:15:42,959: - INFO - TEST: TEST > 'DEVICE' Menu: 3G/4G/LTE WWAN
+2024-08-06 18:15:43,076: - INFO - TEST: TEST > 'DEVICE' Menu: Bluetooth LE
+2024-08-06 18:15:43,109: - INFO - TEST: TEST > 'DEVICE' Menu: Radio Management
+2024-08-06 18:15:43,194: - INFO - TEST: TEST > 'DEVICE' Menu: WWAN
+2024-08-06 18:15:43,195: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:43,196: - INFO - TEST: TEST > 'DEVICE' Menu: Settings >> Settings (TOP)
+2024-08-06 18:15:43,196: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:43,196: - INFO - TEST: TEST > ALL MENU: 71
+2024-08-06 18:15:43,229: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Data updated for [ENG]!
+2024-08-06 18:15:43,229: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Top menu 'DEVICE' is done!
+2024-08-06 18:15:44,240: - INFO - TEST: TEST > 'NETWORK' Menu: システム >> System
+2024-08-06 18:15:44,257: - INFO - TEST: TEST > 'NETWORK' Menu: インターフェース >> Interfaces
+2024-08-06 18:15:44,276: - INFO - TEST: TEST > 'NETWORK' Menu: フェイルオーバーと負荷分散 >> Failover & LB
+2024-08-06 18:15:44,292: - INFO - TEST: TEST > 'NETWORK' Menu: 近隣者検出 >> Neighbor Discovery
+2024-08-06 18:15:44,310: - INFO - TEST: TEST > 'NETWORK' Menu: ARP >> ARP
+2024-08-06 18:15:44,326: - INFO - TEST: TEST > 'NETWORK' Menu: MAC IP アンチスプーフ >> MAC IP Anti-Spoof
+2024-08-06 18:15:44,343: - INFO - TEST: TEST > 'NETWORK' Menu: ウェブ プロキシ >> Web Proxy
+2024-08-06 18:15:44,363: - INFO - TEST: TEST > 'NETWORK' Menu: PortShield グループ >> PortShield Groups
+2024-08-06 18:15:44,380: - INFO - TEST: TEST > 'NETWORK' Menu: VLAN 変換 >> VLAN Translation
+2024-08-06 18:15:44,397: - INFO - TEST: TEST > 'NETWORK' Menu: IP ヘルパー >> IP Helper
+2024-08-06 18:15:44,413: - INFO - TEST: TEST > 'NETWORK' Menu: 動的ルーティング >> Dynamic Routing
+2024-08-06 18:15:44,429: - INFO - TEST: TEST > 'NETWORK' Menu: DHCP サーバ >> DHCP Server
+2024-08-06 18:15:44,445: - INFO - TEST: TEST > 'NETWORK' Menu: マルチキャスト >> Multicast
+2024-08-06 18:15:44,462: - INFO - TEST: TEST > 'NETWORK' Menu: ネットワーク監視 >> Network Monitor
+2024-08-06 18:15:44,478: - INFO - TEST: TEST > 'NETWORK' Menu: AWS 設定 >> AWS Configuration
+2024-08-06 18:15:44,494: - INFO - TEST: TEST > 'NETWORK' Menu: ファイアウォール >> Firewall
+2024-08-06 18:15:44,511: - INFO - TEST: TEST > 'NETWORK' Menu: 詳細 >> Advanced
+2024-08-06 18:15:44,526: - INFO - TEST: TEST > 'NETWORK' Menu: フラッド防御 >> Flood Protection
+2024-08-06 18:15:44,542: - INFO - TEST: TEST > 'NETWORK' Menu: SSL 制御 >> SSL Control
+2024-08-06 18:15:44,560: - INFO - TEST: TEST > 'NETWORK' Menu: 暗号化制御 >> Cipher Control
+2024-08-06 18:15:44,575: - INFO - TEST: TEST > 'NETWORK' Menu: RBL フィルタ >> RBL Filter
+2024-08-06 18:15:44,593: - INFO - TEST: TEST > 'NETWORK' Menu: VoIP >> VoIP
+2024-08-06 18:15:44,610: - INFO - TEST: TEST > 'NETWORK' Menu: 設定 >> Settings
+2024-08-06 18:15:44,627: - INFO - TEST: TEST > 'NETWORK' Menu: 通話状況 >> Call Status
+2024-08-06 18:15:44,647: - INFO - TEST: TEST > 'NETWORK' Menu: DNS >> DNS
+2024-08-06 18:15:44,663: - INFO - TEST: TEST > 'NETWORK' Menu: 設定 >> Settings
+2024-08-06 18:15:44,681: - INFO - TEST: TEST > 'NETWORK' Menu: 動的 DNS >> Dynamic DNS
+2024-08-06 18:15:44,700: - INFO - TEST: TEST > 'NETWORK' Menu: DNS プロキシ >> DNS Proxy
+2024-08-06 18:15:44,716: - INFO - TEST: TEST > 'NETWORK' Menu: スイッチング >> Switching
+2024-08-06 18:15:44,733: - INFO - TEST: TEST > 'NETWORK' Menu: VLAN トランク >> VLAN Trunking
+2024-08-06 18:15:44,749: - INFO - TEST: TEST > 'NETWORK' Menu: L2 発見 >> L2 Discovery
+2024-08-06 18:15:44,766: - INFO - TEST: TEST > 'NETWORK' Menu: リンク統合 >> Link Aggregation
+2024-08-06 18:15:44,783: - INFO - TEST: TEST > 'NETWORK' Menu: ポート ミラーリング >> Port Mirroring
+2024-08-06 18:15:44,799: - INFO - TEST: TEST > 'NETWORK' Menu: SDWAN >> SDWAN
+2024-08-06 18:15:44,818: - INFO - TEST: TEST > 'NETWORK' Menu: グループ >> Groups
+2024-08-06 18:15:44,834: - INFO - TEST: TEST > 'NETWORK' Menu: SLA プローブ >> SLA Probes
+2024-08-06 18:15:44,855: - INFO - TEST: TEST > 'NETWORK' Menu: SLA クラス オブジェクト >> SLA Class Objects
+2024-08-06 18:15:44,872: - INFO - TEST: TEST > 'NETWORK' Menu: パス選択プロファイル >> Path Selection Profiles
+2024-08-06 18:15:44,895: - INFO - TEST: TEST > 'NETWORK' Menu: ルール >> Rules
+2024-08-06 18:15:44,916: - INFO - TEST: TEST > 'NETWORK' Menu: IPSec VPN >> IPSec VPN
+2024-08-06 18:15:44,933: - INFO - TEST: TEST > 'NETWORK' Menu: ルールと設定 >> Rules and Settings
+2024-08-06 18:15:44,948: - INFO - TEST: TEST > 'NETWORK' Menu: 詳細 >> Advanced
+2024-08-06 18:15:44,964: - INFO - TEST: TEST > 'NETWORK' Menu: VPN を越えた DHCP >> DHCP over VPN
+2024-08-06 18:15:44,980: - INFO - TEST: TEST > 'NETWORK' Menu: L2TP サーバ >> L2TP Server
+2024-08-06 18:15:44,997: - INFO - TEST: TEST > 'NETWORK' Menu: AWS VPN >> AWS VPN
+2024-08-06 18:15:45,013: - INFO - TEST: TEST > 'NETWORK' Menu: SSL VPN >> SSL VPN
+2024-08-06 18:15:45,031: - INFO - TEST: TEST > 'NETWORK' Menu: 状況 >> Status
+2024-08-06 18:15:45,050: - INFO - TEST: TEST > 'NETWORK' Menu: サーバ設定 >> Server Settings
+2024-08-06 18:15:45,068: - INFO - TEST: TEST > 'NETWORK' Menu: クライアント設定 >> Client Settings
+2024-08-06 18:15:45,084: - INFO - TEST: TEST > 'NETWORK' Menu: ポータル設定 >> Portal Settings
+2024-08-06 18:15:45,098: - INFO - TEST: TEST > 'NETWORK' Menu: 仮想オフィス >> Virtual Office
+2024-08-06 18:15:45,099: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:45,099: - INFO - TEST: TEST > 'NETWORK' Menu: No duplicated data to the TOP
+2024-08-06 18:15:45,099: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:45,099: - INFO - TEST: TEST > ALL MENU: 51
+2024-08-06 18:15:45,135: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-06 18:15:45,136: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Top menu 'NETWORK' is done!
+2024-08-06 18:15:45,287: - INFO - TEST: TEST > 'NETWORK' Menu: System
+2024-08-06 18:15:45,323: - INFO - TEST: TEST > 'NETWORK' Menu: Interfaces
+2024-08-06 18:15:45,354: - INFO - TEST: TEST > 'NETWORK' Menu: Failover & LB
+2024-08-06 18:15:45,390: - INFO - TEST: TEST > 'NETWORK' Menu: Neighbor Discovery
+2024-08-06 18:15:45,423: - INFO - TEST: TEST > 'NETWORK' Menu: ARP
+2024-08-06 18:15:45,452: - INFO - TEST: TEST > 'NETWORK' Menu: MAC IP Anti-Spoof
+2024-08-06 18:15:45,487: - INFO - TEST: TEST > 'NETWORK' Menu: Web Proxy
+2024-08-06 18:15:45,523: - INFO - TEST: TEST > 'NETWORK' Menu: PortShield Groups
+2024-08-06 18:15:45,556: - INFO - TEST: TEST > 'NETWORK' Menu: PoE Settings
+2024-08-06 18:15:45,590: - INFO - TEST: TEST > 'NETWORK' Menu: VLAN Translation
+2024-08-06 18:15:45,622: - INFO - TEST: TEST > 'NETWORK' Menu: IP Helper
+2024-08-06 18:15:45,652: - INFO - TEST: TEST > 'NETWORK' Menu: Dynamic Routing
+2024-08-06 18:15:45,685: - INFO - TEST: TEST > 'NETWORK' Menu: DHCP Server
+2024-08-06 18:15:45,718: - INFO - TEST: TEST > 'NETWORK' Menu: Multicast
+2024-08-06 18:15:45,755: - INFO - TEST: TEST > 'NETWORK' Menu: Network Monitor
+2024-08-06 18:15:45,786: - INFO - TEST: TEST > 'NETWORK' Menu: AWS Configuration
+2024-08-06 18:15:45,820: - INFO - TEST: TEST > 'NETWORK' Menu: Firewall
+2024-08-06 18:15:45,856: - INFO - TEST: TEST > 'NETWORK' Menu: Advanced
+2024-08-06 18:15:45,889: - INFO - TEST: TEST > 'NETWORK' Menu: Flood Protection
+2024-08-06 18:15:45,921: - INFO - TEST: TEST > 'NETWORK' Menu: SSL Control
+2024-08-06 18:15:45,950: - INFO - TEST: TEST > 'NETWORK' Menu: Cipher Control
+2024-08-06 18:15:45,979: - INFO - TEST: TEST > 'NETWORK' Menu: RBL Filter
+2024-08-06 18:15:46,011: - INFO - TEST: TEST > 'NETWORK' Menu: VoIP
+2024-08-06 18:15:46,040: - INFO - TEST: TEST > 'NETWORK' Menu: Settings
+2024-08-06 18:15:46,073: - INFO - TEST: TEST > 'NETWORK' Menu: Call Status
+2024-08-06 18:15:46,100: - INFO - TEST: TEST > 'NETWORK' Menu: DNS
+2024-08-06 18:15:46,132: - INFO - TEST: TEST > 'NETWORK' Menu: Settings
+2024-08-06 18:15:46,165: - INFO - TEST: TEST > 'NETWORK' Menu: Dynamic DNS
+2024-08-06 18:15:46,197: - INFO - TEST: TEST > 'NETWORK' Menu: DNS Proxy
+2024-08-06 18:15:46,230: - INFO - TEST: TEST > 'NETWORK' Menu: SDWAN
+2024-08-06 18:15:46,265: - INFO - TEST: TEST > 'NETWORK' Menu: Groups
+2024-08-06 18:15:46,316: - INFO - TEST: TEST > 'NETWORK' Menu: SLA Probes
+2024-08-06 18:15:46,359: - INFO - TEST: TEST > 'NETWORK' Menu: SLA Class Objects
+2024-08-06 18:15:46,421: - INFO - TEST: TEST > 'NETWORK' Menu: Path Selection Profiles
+2024-08-06 18:15:46,476: - INFO - TEST: TEST > 'NETWORK' Menu: Rules
+2024-08-06 18:15:46,514: - INFO - TEST: TEST > 'NETWORK' Menu: IPSec VPN
+2024-08-06 18:15:46,586: - INFO - TEST: TEST > 'NETWORK' Menu: Rules and Settings
+2024-08-06 18:15:46,634: - INFO - TEST: TEST > 'NETWORK' Menu: Advanced
+2024-08-06 18:15:46,665: - INFO - TEST: TEST > 'NETWORK' Menu: DHCP over VPN
+2024-08-06 18:15:46,695: - INFO - TEST: TEST > 'NETWORK' Menu: L2TP Server
+2024-08-06 18:15:46,724: - INFO - TEST: TEST > 'NETWORK' Menu: AWS VPN
+2024-08-06 18:15:46,754: - INFO - TEST: TEST > 'NETWORK' Menu: SSL VPN
+2024-08-06 18:15:46,786: - INFO - TEST: TEST > 'NETWORK' Menu: Status
+2024-08-06 18:15:46,820: - INFO - TEST: TEST > 'NETWORK' Menu: Server Settings
+2024-08-06 18:15:46,854: - INFO - TEST: TEST > 'NETWORK' Menu: Client Settings
+2024-08-06 18:15:46,885: - INFO - TEST: TEST > 'NETWORK' Menu: Portal Settings
+2024-08-06 18:15:46,917: - INFO - TEST: TEST > 'NETWORK' Menu: Virtual Office
+2024-08-06 18:15:46,918: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:46,918: - INFO - TEST: TEST > 'NETWORK' Menu: No duplicated data to the TOP
+2024-08-06 18:15:46,918: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:46,918: - INFO - TEST: TEST > ALL MENU: 47
+2024-08-06 18:15:46,943: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Data updated for [ENG]!
+2024-08-06 18:15:46,943: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Top menu 'NETWORK' is done!
+2024-08-06 18:15:47,431: - INFO - TEST: TEST > 'OBJECT' Menu: 一致オブジェクト >> Match Objects
+2024-08-06 18:15:47,447: - INFO - TEST: TEST > 'OBJECT' Menu: ゾーン >> Zones
+2024-08-06 18:15:47,464: - INFO - TEST: TEST > 'OBJECT' Menu: アドレス >> Addresses
+2024-08-06 18:15:47,486: - INFO - TEST: TEST > 'OBJECT' Menu: サービス >> Services
+2024-08-06 18:15:47,505: - INFO - TEST: TEST > 'OBJECT' Menu: URI リスト >> URI Lists
+2024-08-06 18:15:47,519: - INFO - TEST: TEST > 'OBJECT' Menu: 評価 >> Reputation
+2024-08-06 18:15:47,536: - INFO - TEST: TEST > 'OBJECT' Menu: 一致オブジェクト >> Match Objects
+2024-08-06 18:15:47,555: - INFO - TEST: TEST > 'OBJECT' Menu: スケジュール >> Schedules
+2024-08-06 18:15:47,571: - INFO - TEST: TEST > 'OBJECT' Menu: 動的グループ >> Dynamic Group
+2024-08-06 18:15:47,589: - INFO - TEST: TEST > 'OBJECT' Menu: 電子メール アドレス >> Email Addresses
+2024-08-06 18:15:47,606: - INFO - TEST: TEST > 'OBJECT' Menu: プロファイル オブジェクト >> Profile Objects
+2024-08-06 18:15:47,623: - INFO - TEST: TEST > 'OBJECT' Menu: エンドポイント セキュリティ >> Endpoint Security
+2024-08-06 18:15:47,640: - INFO - TEST: TEST > 'OBJECT' Menu: 帯域幅 >> Bandwidth
+2024-08-06 18:15:47,660: - INFO - TEST: TEST > 'OBJECT' Menu: QoS 級割 >> QoS Marking
+2024-08-06 18:15:47,677: - INFO - TEST: TEST > 'OBJECT' Menu: コンテンツ フィルタ >> Content Filter
+2024-08-06 18:15:47,692: - INFO - TEST: TEST > 'OBJECT' Menu: DHCP オプション >> DHCP Option
+2024-08-06 18:15:47,708: - INFO - TEST: TEST > 'OBJECT' Menu: AWS >> AWS
+2024-08-06 18:15:47,723: - INFO - TEST: TEST > 'OBJECT' Menu: DNS フィルタ >> DNS Filtering
+2024-08-06 18:15:47,747: - INFO - TEST: TEST > 'OBJECT' Menu: 動作オブジェクト >> Action Objects
+2024-08-06 18:15:47,778: - INFO - TEST: TEST > 'OBJECT' Menu: アプリケーション ルールの動作 >> App Rule Actions
+2024-08-06 18:15:47,795: - INFO - TEST: TEST > 'OBJECT' Menu: コンテンツ フィルタの動作 >> Content Filter Actions
+2024-08-06 18:15:47,795: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:47,796: - INFO - TEST: TEST > 'OBJECT' Menu: Match Objects >> Match Objects (TOP)
+2024-08-06 18:15:47,797: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:47,797: - INFO - TEST: TEST > ALL MENU: 21
+2024-08-06 18:15:47,826: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-06 18:15:47,827: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Top menu 'OBJECT' is done!
+2024-08-06 18:15:48,478: - INFO - TEST: TEST > 'OBJECT' Menu: Match Objects
+2024-08-06 18:15:48,512: - INFO - TEST: TEST > 'OBJECT' Menu: Zones
+2024-08-06 18:15:48,550: - INFO - TEST: TEST > 'OBJECT' Menu: Addresses
+2024-08-06 18:15:48,584: - INFO - TEST: TEST > 'OBJECT' Menu: Services
+2024-08-06 18:15:48,620: - INFO - TEST: TEST > 'OBJECT' Menu: URI Lists
+2024-08-06 18:15:48,653: - INFO - TEST: TEST > 'OBJECT' Menu: Reputation
+2024-08-06 18:15:48,685: - INFO - TEST: TEST > 'OBJECT' Menu: Match Objects
+2024-08-06 18:15:48,720: - INFO - TEST: TEST > 'OBJECT' Menu: Schedules
+2024-08-06 18:15:48,751: - INFO - TEST: TEST > 'OBJECT' Menu: Dynamic Group
+2024-08-06 18:15:48,785: - INFO - TEST: TEST > 'OBJECT' Menu: Email Addresses
+2024-08-06 18:15:48,817: - INFO - TEST: TEST > 'OBJECT' Menu: Profile Objects
+2024-08-06 18:15:48,853: - INFO - TEST: TEST > 'OBJECT' Menu: Endpoint Security
+2024-08-06 18:15:48,886: - INFO - TEST: TEST > 'OBJECT' Menu: Bandwidth
+2024-08-06 18:15:48,918: - INFO - TEST: TEST > 'OBJECT' Menu: QoS Marking
+2024-08-06 18:15:48,949: - INFO - TEST: TEST > 'OBJECT' Menu: Content Filter
+2024-08-06 18:15:48,980: - INFO - TEST: TEST > 'OBJECT' Menu: DHCP Option
+2024-08-06 18:15:49,010: - INFO - TEST: TEST > 'OBJECT' Menu: AWS
+2024-08-06 18:15:49,042: - INFO - TEST: TEST > 'OBJECT' Menu: DNS Filtering
+2024-08-06 18:15:49,075: - INFO - TEST: TEST > 'OBJECT' Menu: Action Objects
+2024-08-06 18:15:49,109: - INFO - TEST: TEST > 'OBJECT' Menu: App Rule Actions
+2024-08-06 18:15:49,139: - INFO - TEST: TEST > 'OBJECT' Menu: Content Filter Actions
+2024-08-06 18:15:49,139: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:49,140: - INFO - TEST: TEST > 'OBJECT' Menu: Match Objects >> Match Objects (TOP)
+2024-08-06 18:15:49,140: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:49,140: - INFO - TEST: TEST > ALL MENU: 21
+2024-08-06 18:15:49,164: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Data updated for [ENG]!
+2024-08-06 18:15:49,164: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Top menu 'OBJECT' is done!
+2024-08-06 18:15:52,511: - INFO - TEST: TEST > 'POLICY' Menu: Rules and Policies
+2024-08-06 18:15:52,552: - INFO - TEST: TEST > 'POLICY' Menu: Access Rules
+2024-08-06 18:15:52,588: - INFO - TEST: TEST > 'POLICY' Menu: NAT Rules
+2024-08-06 18:15:52,626: - INFO - TEST: TEST > 'POLICY' Menu: Routing Rules
+2024-08-06 18:15:52,663: - INFO - TEST: TEST > 'POLICY' Menu: DNS Rules
+2024-08-06 18:15:52,687: - INFO - TEST: TEST > 'POLICY' Menu: ルールとポリシー >> Rules and Policies
+2024-08-06 18:15:52,690: - INFO - TEST: TEST > 'POLICY' Menu: Content Filter Rules
+2024-08-06 18:15:52,705: - INFO - TEST: TEST > 'POLICY' Menu: アクセス ルール >> Access Rules
+2024-08-06 18:15:52,720: - INFO - TEST: TEST > 'POLICY' Menu: App Rules
+2024-08-06 18:15:52,721: - INFO - TEST: TEST > 'POLICY' Menu: NAT ルール >> NAT Rules
+2024-08-06 18:15:52,738: - INFO - TEST: TEST > 'POLICY' Menu: ルーティング ルール >> Routing Rules
+2024-08-06 18:15:52,750: - INFO - TEST: TEST > 'POLICY' Menu: Endpoint Rules
+2024-08-06 18:15:52,754: - INFO - TEST: TEST > 'POLICY' Menu: DNS ルール >> DNS Rules
+2024-08-06 18:15:52,775: - INFO - TEST: TEST > 'POLICY' Menu: コンテンツ フィルタ ルール >> Content Filter Rules
+2024-08-06 18:15:52,781: - INFO - TEST: TEST > 'POLICY' Menu: DPI-SSL
+2024-08-06 18:15:52,793: - INFO - TEST: TEST > 'POLICY' Menu: アプリケーション ルール >> App Rules
+2024-08-06 18:15:52,812: - INFO - TEST: TEST > 'POLICY' Menu: Client SSL
+2024-08-06 18:15:52,812: - INFO - TEST: TEST > 'POLICY' Menu: エンドポイント ルール >> Endpoint Rules
+2024-08-06 18:15:52,831: - INFO - TEST: TEST > 'POLICY' Menu: DPI-SSL >> DPI-SSL
+2024-08-06 18:15:52,842: - INFO - TEST: TEST > 'POLICY' Menu: Server SSL
+2024-08-06 18:15:52,845: - INFO - TEST: TEST > 'POLICY' Menu: クライアント SSL >> Client SSL
+2024-08-06 18:15:52,862: - INFO - TEST: TEST > 'POLICY' Menu: サーバ SSL >> Server SSL
+2024-08-06 18:15:52,872: - INFO - TEST: TEST > 'POLICY' Menu: DPI-SSH
+2024-08-06 18:15:52,879: - INFO - TEST: TEST > 'POLICY' Menu: DPI-SSH >> DPI-SSH
+2024-08-06 18:15:52,892: - INFO - TEST: TEST > 'POLICY' Menu: 設定 >> Settings
+2024-08-06 18:15:52,902: - INFO - TEST: TEST > 'POLICY' Menu: Settings
+2024-08-06 18:15:52,906: - INFO - TEST: TEST > 'POLICY' Menu: セキュリティ サービス >> Security Services
+2024-08-06 18:15:52,921: - INFO - TEST: TEST > 'POLICY' Menu: サマリ >> Summary
+2024-08-06 18:15:52,933: - INFO - TEST: TEST > 'POLICY' Menu: Security Services
+2024-08-06 18:15:52,935: - INFO - TEST: TEST > 'POLICY' Menu: ゲートウェイ アンチウイルス >> Gateway Anti-Virus
+2024-08-06 18:15:52,948: - INFO - TEST: TEST > 'POLICY' Menu: アンチスパイウェア >> Anti-Spyware
+2024-08-06 18:15:52,963: - INFO - TEST: TEST > 'POLICY' Menu: 侵入防御 >> Intrusion Prevention
+2024-08-06 18:15:52,963: - INFO - TEST: TEST > 'POLICY' Menu: Summary
+2024-08-06 18:15:52,978: - INFO - TEST: TEST > 'POLICY' Menu: 地域 IP フィルタ >> Geo-IP Filter
+2024-08-06 18:15:52,994: - INFO - TEST: TEST > 'POLICY' Menu: ボットネット フィルタ >> Botnet Filter
+2024-08-06 18:15:52,994: - INFO - TEST: TEST > 'POLICY' Menu: Gateway Anti-Virus
+2024-08-06 18:15:53,009: - INFO - TEST: TEST > 'POLICY' Menu: アプリケーション制御 >> App Control
+2024-08-06 18:15:53,024: - INFO - TEST: TEST > 'POLICY' Menu: コンテンツ フィルタ >> Content Filter
+2024-08-06 18:15:53,024: - INFO - TEST: TEST > 'POLICY' Menu: Anti-Spyware
+2024-08-06 18:15:53,040: - INFO - TEST: TEST > 'POLICY' Menu: アンチスパム >> Anti-Spam
+2024-08-06 18:15:53,055: - INFO - TEST: TEST > 'POLICY' Menu: 状況 >> Status
+2024-08-06 18:15:53,056: - INFO - TEST: TEST > 'POLICY' Menu: Intrusion Prevention
+2024-08-06 18:15:53,068: - INFO - TEST: TEST > 'POLICY' Menu: 設定 >> Settings
+2024-08-06 18:15:53,083: - INFO - TEST: TEST > 'POLICY' Menu: キャプチャ ATP >> Capture ATP
+2024-08-06 18:15:53,083: - INFO - TEST: TEST > 'POLICY' Menu: Geo-IP Filter
+2024-08-06 18:15:53,096: - INFO - TEST: TEST > 'POLICY' Menu: 設定 >> Settings
+2024-08-06 18:15:53,114: - INFO - TEST: TEST > 'POLICY' Menu: スキャン履歴 >> Scanning History
+2024-08-06 18:15:53,114: - INFO - TEST: TEST > 'POLICY' Menu: Botnet Filter
+2024-08-06 18:15:53,129: - INFO - TEST: TEST > 'POLICY' Menu: DNS セキュリティ >> DNS Security
+2024-08-06 18:15:53,145: - INFO - TEST: TEST > 'POLICY' Menu: 設定 >> Settings
+2024-08-06 18:15:53,147: - INFO - TEST: TEST > 'POLICY' Menu: App Control
+2024-08-06 18:15:53,159: - INFO - TEST: TEST > 'POLICY' Menu: レポート >> Reports
+2024-08-06 18:15:53,176: - INFO - TEST: TEST > 'POLICY' Menu: Content Filter
+2024-08-06 18:15:53,176: - INFO - TEST: TEST > 'POLICY' Menu: エンドポイント セキュリティ >> Endpoint Security
+2024-08-06 18:15:53,176: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:53,176: - INFO - TEST: TEST > 'POLICY' Menu: No duplicated data to the TOP
+2024-08-06 18:15:53,176: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:53,177: - INFO - TEST: TEST > ALL MENU: 32
+2024-08-06 18:15:53,196: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-06 18:15:53,197: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Top menu 'POLICY' is done!
+2024-08-06 18:15:53,209: - INFO - TEST: TEST > 'POLICY' Menu: Anti-Spam
+2024-08-06 18:15:53,240: - INFO - TEST: TEST > 'POLICY' Menu: Status
+2024-08-06 18:15:53,268: - INFO - TEST: TEST > 'POLICY' Menu: Settings
+2024-08-06 18:15:53,302: - INFO - TEST: TEST > 'POLICY' Menu: Capture ATP
+2024-08-06 18:15:53,337: - INFO - TEST: TEST > 'POLICY' Menu: Settings
+2024-08-06 18:15:53,370: - INFO - TEST: TEST > 'POLICY' Menu: Scanning History
+2024-08-06 18:15:53,401: - INFO - TEST: TEST > 'POLICY' Menu: DNS Security
+2024-08-06 18:15:53,436: - INFO - TEST: TEST > 'POLICY' Menu: Settings
+2024-08-06 18:15:53,468: - INFO - TEST: TEST > 'POLICY' Menu: Reports
+2024-08-06 18:15:53,499: - INFO - TEST: TEST > 'POLICY' Menu: Endpoint Security
+2024-08-06 18:15:53,499: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:53,499: - INFO - TEST: TEST > 'POLICY' Menu: No duplicated data to the TOP
+2024-08-06 18:15:53,499: - INFO - TEST: TEST > ========================================================================
+2024-08-06 18:15:53,500: - INFO - TEST: TEST > ALL MENU: 32
+2024-08-06 18:15:53,520: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Data updated for [ENG]!
+2024-08-06 18:15:53,520: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Top menu 'POLICY' is done!
+2024-08-06 18:15:58,160: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Info created for [JPN]!
+2024-08-06 18:15:58,166: - INFO - TEST: com.demo.apitest.Test_NavData_JPN > Info updated for [JPN]!
+2024-08-06 18:15:58,190: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Info created for [ENG]!
+2024-08-06 18:15:58,195: - INFO - TEST: com.demo.apitest.Test_NavData_ENG > Info updated for [ENG]!
+2024-08-06 18:15:58,749: - INFO - TEST: test_Step02_MenuTop_JPN > [Pass]Take screenshot...
+2024-08-06 18:15:58,769: - INFO - TEST: test_Step02_MenuTop_ENG > [Pass]Take screenshot...
+2024-08-06 18:16:02,386: - INFO - Test_NavData_ENG: box_JPN > Got data!
+2024-08-06 18:16:02,395: - INFO - Test_NavData_ENG: box_ENG > Got data!
+2024-08-06 18:16:02,395: - INFO - Test_NavData_ENG: test_dataCompare > Ready to start...
+2024-08-06 18:16:02,395: - INFO - Test_NavData_ENG: test_dataCompare > --------------------------------------------------------------------
+2024-08-06 18:16:02,397: - INFO - Test_NavData_ENG: test_dataCompare > [JPN] info: Device Name -----> NSA 2700
+2024-08-06 18:16:02,398: - INFO - Test_NavData_ENG: test_dataCompare > [JPN] info: Serial Number ---> 2CB8EDBA2F98
+2024-08-06 18:16:02,398: - INFO - Test_NavData_ENG: test_dataCompare > [JPN] info: Firmware Version > SonicOS 7.1.1-7058-R6162-j6359
+2024-08-06 18:16:02,398: - INFO - Test_NavData_ENG: test_dataCompare > --------------------------------------------------------------------
+2024-08-06 18:16:02,400: - INFO - Test_NavData_ENG: test_dataCompare > [ENG] info: Device Name -----> TZ 570P
+2024-08-06 18:16:02,400: - INFO - Test_NavData_ENG: test_dataCompare > [ENG] info: Serial Number ---> 2CB8ED694D58
+2024-08-06 18:16:02,400: - INFO - Test_NavData_ENG: test_dataCompare > [ENG] info: Firmware Version > SonicOS 7.1.1-7058-P6163
+2024-08-06 18:16:02,400: - INFO - Test_NavData_ENG: test_dataCompare > --------------------------------------------------------------------
+2024-08-06 18:16:02,403: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: DEVICE > Users > Partitions
+2024-08-06 18:16:02,404: - INFO - Test_NavData_ENG: missing_page > [JPN] version missing: NETWORK > System > PoE Settings
+2024-08-06 18:16:02,405: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching
+2024-08-06 18:16:02,405: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching > VLAN Trunking
+2024-08-06 18:16:02,405: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching > L2 Discovery
+2024-08-06 18:16:02,405: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching > Link Aggregation
+2024-08-06 18:16:02,405: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching > Port Mirroring
+2024-08-06 18:19:20,276: - INFO - Test_NavData_ENG: box_JPN > Got data!
+2024-08-06 18:19:20,296: - INFO - Test_NavData_ENG: box_ENG > Got data!
+2024-08-06 18:19:20,296: - INFO - Test_NavData_ENG: test_dataCompare > Ready to start...
+2024-08-06 18:19:20,296: - INFO - Test_NavData_ENG: test_dataCompare > --------------------------------------------------------------------
+2024-08-06 18:19:20,300: - INFO - Test_NavData_ENG: test_dataCompare > [JPN] info: Device Name -----> NSA 2700
+2024-08-06 18:19:20,301: - INFO - Test_NavData_ENG: test_dataCompare > [JPN] info: Serial Number ---> 2CB8EDBA2F98
+2024-08-06 18:19:20,301: - INFO - Test_NavData_ENG: test_dataCompare > [JPN] info: Firmware Version > SonicOS 7.1.1-7058-R6162-j6359
+2024-08-06 18:19:20,302: - INFO - Test_NavData_ENG: test_dataCompare > --------------------------------------------------------------------
+2024-08-06 18:19:20,305: - INFO - Test_NavData_ENG: test_dataCompare > [ENG] info: Device Name -----> TZ 570P
+2024-08-06 18:19:20,305: - INFO - Test_NavData_ENG: test_dataCompare > [ENG] info: Serial Number ---> 2CB8ED694D58
+2024-08-06 18:19:20,306: - INFO - Test_NavData_ENG: test_dataCompare > [ENG] info: Firmware Version > SonicOS 7.1.1-7058-P6163
+2024-08-06 18:19:20,306: - INFO - Test_NavData_ENG: test_dataCompare > --------------------------------------------------------------------
+2024-08-06 18:19:20,310: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: DEVICE > Users > Partitions
+2024-08-06 18:19:20,312: - INFO - Test_NavData_ENG: missing_page > [JPN] version missing: NETWORK > System > PoE Settings
+2024-08-06 18:19:20,313: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching
+2024-08-06 18:19:20,313: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching > VLAN Trunking
+2024-08-06 18:19:20,313: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching > L2 Discovery
+2024-08-06 18:19:20,314: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching > Link Aggregation
+2024-08-06 18:19:20,314: - INFO - Test_NavData_ENG: missing_page > [ENG] version missing: NETWORK > Switching > Port Mirroring
