@@ -20,7 +20,7 @@ public class Test_NavData_JPN {
     private int Preempt;
 
     @BeforeClass
-    public void beforeClass() throws InterruptedException, IOException {
+    public void beforeClass() {
         // [S]ChromeDriver Settings
         System.setProperty(Data_JPN.chromeDriver_data[0], Data_JPN.chromeDriver_data[1]);
         ChromeOptions chromOptions = new ChromeOptions();
@@ -40,7 +40,7 @@ public class Test_NavData_JPN {
 
     // Box info
     public void box_info() throws IOException {
-        List<String> info_JPNs = new ArrayList<String>();
+        List<String> info_JPNs = new ArrayList<>();
         // [A]Go to DEVICE > Settings
         driver.get(Data_JPN.FirmwareSettings_url);
         // [A]Fix Box & SN shows unknown
@@ -61,8 +61,7 @@ public class Test_NavData_JPN {
     }
 
     // Actual data
-    public List<String> actual_data(String top_menu) throws InterruptedException, IOException {
-        List<String> actual_data = new ArrayList<String>();
+    public List<String> actual_data(String top_menu) {
         // [A]Page redirect
         for (int i = 0; i < Data_JPN.Menu_url.length; i++) {
             if (Data_JPN.Menu_url[i][0].equals(top_menu)) {
@@ -79,12 +78,11 @@ public class Test_NavData_JPN {
 
         mf.wait_element("xpath", Data_JPN.SubMenu_nested, "SubMenu_nested");
         List<WebElement> Menu_alls = mf.find_elements("xpath", Data_JPN.LeftPane_path);
-        actual_data.addAll(mf.expand_menu(Menu_alls, top_menu));
-        return actual_data;
+        return new ArrayList<>(mf.expand_menu(Menu_alls, top_menu));
     }
 
     @Test
-    public void test_Step01_Login_JPN() throws Exception {
+    public void test_Step01_Login_JPN() {
         // [A]Enter "ユーザ名"
         mf.wait_element("xpath", Data_JPN.userName_path, "userName").sendKeys(Data_JPN.login_name);
         // [A]Enter "パスワード"
@@ -102,7 +100,7 @@ public class Test_NavData_JPN {
 
     @Test
     public void test_Step02_MenuTop_JPN() throws Exception {
-        List<String> actualData = new ArrayList<String>();
+        List<String> actualData;
         String[] topMenus = { "HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY" };
         // [A]Switch to "Non-Config" mode
         if (Preempt == 0) {

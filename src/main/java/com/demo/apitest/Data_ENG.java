@@ -4,8 +4,7 @@ import java.io.File;
 
 public class Data_ENG {
     // Box info
-    public static String baseUrl = "https://10.8.162.177"; // TZ 570P
-//	public static String baseUrl = "https://10.103.50.60"; // TZ 370W
+	public static String baseUrl = "https://10.103.50.60"; // TZ 370W
 //	public static String baseUrl = "https://10.8.162.201"; // NSa 2700
 //	public static String baseUrl = "https://10.8.56.160"; // NSa 5700
 
@@ -17,13 +16,12 @@ public class Data_ENG {
 
     // Preempt
     public static String preempt_path = "//button[contains(text(),'Non-Config')]";
+
     // Username field
     public static String userName_path = "//input[contains(@placeholder,'Enter your username')]";
     public static String login_name = "admin";
     // Password field
     public static String password_path = "//input[contains(@placeholder,'Enter your password')]";
-
-    //	public static String login_pass = "password";
     public static String login_pass = "sonicwall";
 
     // LOGIN button
@@ -41,7 +39,8 @@ public class Data_ENG {
     public static String Version_path_02 = "//div[@class='sw-table-row__cell__wrapper sw-flexbox__flex sw-flexbox sw-flexbox--center-items']/div/div/div[2]";
 
     // Top menu URL
-    public static String[][] Menu_url = {{"HOME", baseUrl + "/sonicui/7/m/dashboard/overview/status/device"},
+    public static String[][] Menu_url = {
+            {"HOME", baseUrl + "/sonicui/7/m/dashboard/overview/status/device"},
             {"MONITOR", baseUrl + "/sonicui/7/m/mgmt/system/real-time-monitor-ng"}, // 7.1.1
             {"DEVICE", baseUrl + "/sonicui/7/m/mgmt/system/license-enhanced"},
             {"NETWORK", baseUrl + "/sonicui/7/m/mgmt/network/interfaces"},
@@ -56,4 +55,3 @@ public class Data_ENG {
     public static String SubMenu_nested = "//ul[@class='sw-nav-group__items sw-nav-group__items--nested-level-0']//div[@class='sw-nav-item__content sw-flexbox sw-flexbox--center-items sw-flexbox__flex']/span";
 
 }
-

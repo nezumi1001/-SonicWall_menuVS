@@ -20,7 +20,7 @@ public class Test_NavData_ZHT {
     private int Preempt;
 
     @BeforeClass
-    public void beforeClass() throws InterruptedException, IOException {
+    public void beforeClass() {
         // [S]ChromeDriver Settings
         System.setProperty(Data_ZHT.chromeDriver_data[0], Data_ZHT.chromeDriver_data[1]);
         ChromeOptions chromOptions = new ChromeOptions();
@@ -40,7 +40,7 @@ public class Test_NavData_ZHT {
 
     // Box info
     public void box_info() throws IOException {
-        List<String> info_ZHTs = new ArrayList<String>();
+        List<String> info_ZHTs = new ArrayList<>();
         // [A]Go to DEVICE > Settings
         driver.get(Data_ZHT.FirmwareSettings_url);
         // [A]Fix Box & SN shows unknown
@@ -61,8 +61,7 @@ public class Test_NavData_ZHT {
     }
 
     // Actual data
-    public List<String> actual_data(String top_menu) throws InterruptedException, IOException {
-        List<String> actual_data = new ArrayList<String>();
+    public List<String> actual_data(String top_menu) {
         // [A]Page redirect
         for (int i = 0; i < Data_ZHT.Menu_url.length; i++) {
             if (Data_ZHT.Menu_url[i][0].equals(top_menu)) {
@@ -77,12 +76,11 @@ public class Test_NavData_ZHT {
             mf.js_click(Menu_dark);
         mf.wait_element("xpath", Data_ZHT.SubMenu_nested, "SubMenu_nested");
         List<WebElement> Menu_alls = mf.find_elements("xpath", Data_ZHT.LeftPane_path);
-        actual_data.addAll(mf.expand_menu(Menu_alls, top_menu));
-        return actual_data;
+        return new ArrayList<>(mf.expand_menu(Menu_alls, top_menu));
     }
 
     @Test
-    public void test_Step01_Login_ZHT() throws Exception {
+    public void test_Step01_Login_ZHT() {
         // [A]Enter "使用者名稱"
         mf.wait_element("xpath", Data_ZHT.userName_path, "userName").sendKeys(Data_ZHT.login_name);
         // [A]Enter "密碼"
@@ -100,7 +98,7 @@ public class Test_NavData_ZHT {
 
     @Test
     public void test_Step02_MenuTop_ZHT() throws Exception {
-        List<String> actualData = new ArrayList<String>();
+        List<String> actualData;
         String[] topMenus = { "HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY" };
         // [A]Switch to "Non-Config" mode
         if (Preempt == 0) {

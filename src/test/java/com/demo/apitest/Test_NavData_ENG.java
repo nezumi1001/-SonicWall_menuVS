@@ -20,7 +20,7 @@ public class Test_NavData_ENG {
     private int Preempt;
 
     @BeforeClass
-    public void beforeClass() throws InterruptedException, IOException {
+    public void beforeClass() {
         // [S]JJ > JE, ZZ > ZE
         Data_JPN.check_list = 0;
         Data_ZHT.check_list = 0;
@@ -43,7 +43,7 @@ public class Test_NavData_ENG {
 
     // Box info
     public void box_info() throws IOException {
-        List<String> info_ENGs = new ArrayList<String>();
+        List<String> info_ENGs = new ArrayList<>();
         // [A]Go to DEVICE > Settings
         driver.get(Data_ENG.FirmwareSettings_url);
         // [A]Fix Box & SN shows unknown
@@ -64,8 +64,8 @@ public class Test_NavData_ENG {
     }
 
     // Actual data
-    public List<String> actual_data(String top_menu) throws InterruptedException, IOException {
-        List<String> actual_data = new ArrayList<String>();
+    public List<String> actual_data(String top_menu) {
+//        List<String> actual_data = new ArrayList<String>();
         // [A]Page redirect
         for (int i = 0; i < Data_ENG.Menu_url.length; i++) {
             if (Data_ENG.Menu_url[i][0].equals(top_menu)) {
@@ -80,12 +80,14 @@ public class Test_NavData_ENG {
             mf.js_click(Menu_dark);
         mf.wait_element("xpath", Data_ENG.SubMenu_nested, "SubMenu_nested");
         List<WebElement> Menu_alls = mf.find_elements("xpath", Data_ENG.LeftPane_path);
-        actual_data.addAll(mf.expand_menu(Menu_alls, top_menu));
-        return actual_data;
+//        actual_data.addAll(mf.expand_menu(Menu_alls, top_menu)); // option 1
+//        List<String> actual_data = new ArrayList<>(mf.expand_menu(Menu_alls, top_menu)); // option 2
+//        return actual_data;
+        return new ArrayList<>(mf.expand_menu(Menu_alls, top_menu));
     }
 
     @Test
-    public void test_Step01_Login_ENG() throws Exception {
+    public void test_Step01_Login_ENG() {
         // [A]Enter Username
         mf.wait_element("xpath", Data_ENG.userName_path, "userName").sendKeys(Data_ENG.login_name);
         // [A]Enter Password
@@ -103,7 +105,8 @@ public class Test_NavData_ENG {
 
     @Test
     public void test_Step02_MenuTop_ENG() throws Exception {
-        List<String> actualData = new ArrayList<String>();
+//        List<String> actualData = new ArrayList<String>();
+        List<String> actualData;
         String[] topMenus = {"HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY"};
         // [A]Switch to "Non-Config" mode
         if (Preempt == 0) {

@@ -7,7 +7,7 @@ import java.util.List;
 import org.testng.annotations.Test;
 
 public class Func_Delete {
-    List<String> delete_paths = new ArrayList<String>();
+    List<String> delete_paths = new ArrayList<>();
     static File my_path = new File(System.getProperty("user.dir"));
     static String delete_log_report = "\\src\\main\\resources\\Log\\report";
     static String delete_log_log4j = "\\src\\main\\resources\\Log\\log4j";
@@ -21,28 +21,32 @@ public class Func_Delete {
             return;
         }
 
-        if (null != file) {
-            if (file.isFile()) {
-                boolean result = file.delete();
-                int tryCount = 0;
-                while (!result && tryCount++ < 10) {
-                    System.gc(); // return source
-                    Thread.sleep(2000);
-                    result = file.delete();
-                }
+        if (file.isFile()) {
+            boolean result = file.delete();
+            int tryCount = 0;
+            while (!result && tryCount++ < 10) {
+                System.gc(); // return source
+                Thread.sleep(2000);
+                result = file.delete();
             }
-
-            File[] files = file.listFiles();
-
-            if (null != files) {
-                for (int i = 0; i < files.length; i++) {
-                    deleteAllFilesOfDir(files[i]);
-                }
-                System.out.println("[P]Print out >> Deleted all files under " + file);
-            }
-
-            file.delete();
         }
+
+        File[] files = file.listFiles();
+
+        if (null != files) {
+            /*for (int i = 0; i < files.length; i++) {
+                deleteAllFilesOfDir(files[i]);
+            }*/
+
+            for (File value : files) {
+                deleteAllFilesOfDir(value);
+            }
+
+            System.out.println("[P]Print out >> Deleted all files under " + file);
+        }
+
+        //noinspection ResultOfMethodCallIgnored
+        file.delete();
     }
 
     @Test
