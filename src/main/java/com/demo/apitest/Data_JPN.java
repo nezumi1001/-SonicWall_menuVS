@@ -7,15 +7,15 @@ public class Data_JPN {
     public static int check_list = 1;
 
     // Box info
-    public static String baseUrl = "https://10.103.50.113"; // TZ 270W
-//    public static String baseUrl = "https://10.8.162.150"; // NSA 2700
-//    public static String baseUrl = "https://10.8.162.204"; // NSa 5700
+//    public static String baseUrl = "https://10.103.50.140"; // TZ 270W
+//    public static String baseUrl = "https://10.103.50.xxx"; // TZ 470
+    public static String baseUrl = "https://10.8.162.156"; // NSA 2700
 
     // ChromeDriver Settings
     public static File my_path = new File(System.getProperty("user.dir"));
     public static String[] chromeDriver_data = {"webdriver.chrome.driver",
             my_path.getParent() + "\\SonicWall_menuVS\\src\\main\\resources\\Driver\\chromedriver.exe"};
-    public static String Chrome_userData = "--user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data2";
+    public static String Chrome_userData = "--user-data-dir=C:\\Users\\wodem\\AppData\\Local\\Google\\Chrome\\User Data2";
 
     // Preempt
     public static String preempt_path = "//button[contains(text(),'非構成')]";

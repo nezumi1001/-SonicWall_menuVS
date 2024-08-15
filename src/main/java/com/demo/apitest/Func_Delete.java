@@ -11,7 +11,7 @@ public class Func_Delete {
     static File my_path = new File(System.getProperty("user.dir"));
     static String delete_log_report = "\\src\\main\\resources\\Log\\report";
     static String delete_log_log4j = "\\src\\main\\resources\\Log\\log4j";
-    static String delete_log_Screenshot_image = "\\src\\main\\resources\\Screenshot\\image";
+    static String delete_log_Screenshot_image = "\\src\\main\\resources\\Screenshot\\Image";
     static String delete_log_Data_compare = "\\src\\main\\resources\\Data\\compare";
     static String delete_log_Data_info = "\\src\\main\\resources\\Data\\info";
 

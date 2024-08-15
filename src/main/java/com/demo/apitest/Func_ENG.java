@@ -207,7 +207,7 @@ public class Func_ENG {
 
         if (!file_compare.exists()) {
             //noinspection ResultOfMethodCallIgnored
-            file_compare.mkdir();
+            file_compare.mkdirs();
         }
         // Write data
 //        FileOutputStream out = new FileOutputStream(my_path + "\\src\\main\\resources\\Data\\info\\info_ENG.xls");
@@ -261,7 +261,7 @@ public class Func_ENG {
 
         if (!file_compare.exists()) {
             //noinspection ResultOfMethodCallIgnored
-            file_compare.mkdir();
+            file_compare.mkdirs();
         }
         // Write data
 //        FileOutputStream out = new FileOutputStream(my_path + "\\src\\main\\resources\\Data\\compare\\Box_ENG.xls");

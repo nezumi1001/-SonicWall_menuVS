@@ -189,7 +189,7 @@ public class Func_ZHT {
         File file_compare = new File(my_path + CREATE_INFO_PATH);
         if (!file_compare.exists()) {
             //noinspection ResultOfMethodCallIgnored
-            file_compare.mkdir();
+            file_compare.mkdirs();
         }
         // Write data
         FileOutputStream out = new FileOutputStream(my_path + CREATE_INFO_STREAM);
@@ -232,7 +232,7 @@ public class Func_ZHT {
         File file_compare = new File(my_path + CREATE_DATA_PATH);
         if (!file_compare.exists()) {
             //noinspection ResultOfMethodCallIgnored
-            file_compare.mkdir();
+            file_compare.mkdirs();
         }
         // Write data
         FileOutputStream out = new FileOutputStream(my_path + CREATE_DATA_STREAM);

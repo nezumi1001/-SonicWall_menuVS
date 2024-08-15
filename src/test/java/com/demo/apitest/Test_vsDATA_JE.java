@@ -22,7 +22,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Test_vsDATA_JE {
     private final File my_path = new File(System.getProperty("user.dir"));
-    private final Logger log = LogManager.getLogger(Test_NavData_ENG.class.getName());
+    //    private final Logger log = LogManager.getLogger(Test_NavData_ENG.class.getName());
+    private final Logger log = LogManager.getLogger(Test_vsDATA_JE.class.getName());
     private int match = 0;
     private ExtentReports exReport;
     private ExtentTest exTest;

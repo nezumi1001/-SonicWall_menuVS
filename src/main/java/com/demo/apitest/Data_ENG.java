@@ -4,15 +4,14 @@ import java.io.File;
 
 public class Data_ENG {
     // Box info
-	public static String baseUrl = "https://10.103.50.60"; // TZ 370W
-//	public static String baseUrl = "https://10.8.162.201"; // NSa 2700
-//	public static String baseUrl = "https://10.8.56.160"; // NSa 5700
+//	public static String baseUrl = "https://10.103.50.60"; // TZ 370W
+	public static String baseUrl = "https://10.8.162.177"; // TZ 570P
 
     // ChromeDriver Settings
     public static File my_path = new File(System.getProperty("user.dir"));
     public static String[] chromeDriver_data = {"webdriver.chrome.driver",
             my_path.getParent() + "\\SonicWall_menuVS\\src\\main\\resources\\Driver\\chromedriver.exe"};
-    public static String Chrome_userData = "--user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data3";
+    public static String Chrome_userData = "--user-data-dir=C:\\Users\\wodem\\AppData\\Local\\Google\\Chrome\\User Data3";
 
     // Preempt
     public static String preempt_path = "//button[contains(text(),'Non-Config')]";

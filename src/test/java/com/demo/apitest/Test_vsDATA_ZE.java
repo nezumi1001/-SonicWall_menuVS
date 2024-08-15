@@ -22,7 +22,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Test_vsDATA_ZE {
     private final File my_path = new File(System.getProperty("user.dir"));
-    private final Logger log = LogManager.getLogger(Test_NavData_ENG.class.getName());
+    //    private final Logger log = LogManager.getLogger(Test_NavData_ENG.class.getName());
+    private final Logger log = LogManager.getLogger(Test_vsDATA_ZE.class.getName());
     private int match = 0;
     private ExtentReports exReport;
     private ExtentTest exTest;
@@ -110,7 +111,7 @@ public class Test_vsDATA_ZE {
         String[] menu_NETWORKs = menu_NETWORK.toArray(new String[0]);
         String[] menu_OBJECTs = menu_OBJECT.toArray(new String[0]);
         String[] menu_POLICYs = menu_POLICY.toArray(new String[0]);
-        String[][] menu_ZHT = { menu_HOMEs, menu_MONITORs, menu_DEVICEs, menu_NETWORKs, menu_OBJECTs, menu_POLICYs };
+        String[][] menu_ZHT = {menu_HOMEs, menu_MONITORs, menu_DEVICEs, menu_NETWORKs, menu_OBJECTs, menu_POLICYs};
         // [L]Log
         log_message(this.getClass().getName(), "Got data!");
         workbook_ZHT.close();
@@ -162,7 +163,7 @@ public class Test_vsDATA_ZE {
         String[] menu_NETWORKs = menu_NETWORK.toArray(new String[0]);
         String[] menu_OBJECTs = menu_OBJECT.toArray(new String[0]);
         String[] menu_POLICYs = menu_POLICY.toArray(new String[0]);
-        String[][] menu_ENG = { menu_HOMEs, menu_MONITORs, menu_DEVICEs, menu_NETWORKs, menu_OBJECTs, menu_POLICYs };
+        String[][] menu_ENG = {menu_HOMEs, menu_MONITORs, menu_DEVICEs, menu_NETWORKs, menu_OBJECTs, menu_POLICYs};
         // [L]Log
         log_message(this.getClass().getName(), "Got data!");
         workbook_ENG.close();
@@ -172,7 +173,7 @@ public class Test_vsDATA_ZE {
     // Get missing page
     public int missing_page(int column_no, List<String> MenusZHTs, List<String> MenusENGs) {
         // Column name
-        String[] column_name = { "HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY" };
+        String[] column_name = {"HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY"};
         // New menu ZHT
         List<String> HOME_MenusZHTs = new ArrayList<>();
         List<String> MONITOR_MenusZHTs = new ArrayList<>();
@@ -182,20 +183,20 @@ public class Test_vsDATA_ZE {
         List<String> POLICY_MenusZHTs = new ArrayList<>();
 
         // HOME ZHT
-        String[] HOME_Menus_ZHT = { "Dashboard", "Legal Information", "API" };
+        String[] HOME_Menus_ZHT = {"Dashboard", "Legal Information", "API"};
         // MONITOR ZHT
-        String[] MONITOR_Menus_ZHT = { "Real-Time Charts", "AppFlow", "SDWAN", "Logs", "Tools & Monitors" };
+        String[] MONITOR_Menus_ZHT = {"Real-Time Charts", "AppFlow", "SDWAN", "Logs", "Tools & Monitors"};
         // DEVICE ZHT
-        String[] DEVICE_Menus_ZHT = { "Settings (TOP)", "Internal Wireless", "High Availability", "Users", "AppFlow",
-                "Network Access Control", "Log", "Diagnostics", "Switch Network", "Access Points", "WWAN" };
+        String[] DEVICE_Menus_ZHT = {"Settings (TOP)", "Internal Wireless", "High Availability", "Users", "AppFlow",
+                "Network Access Control", "Log", "Diagnostics", "Switch Network", "Access Points", "WWAN"};
         // NETWORK ZHT
-        String[] NETWORK_Menus_ZHT = { "System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "IPSec VPN",
-                "SSL VPN" };
+        String[] NETWORK_Menus_ZHT = {"System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "IPSec VPN",
+                "SSL VPN"};
         // OBJECT ZHT
-        String[] OBJECT_Menus_ZHT = { "Match Objects (TOP)", "Profile Objects", "Action Objects", "Signatures" };
+        String[] OBJECT_Menus_ZHT = {"Match Objects (TOP)", "Profile Objects", "Action Objects", "Signatures"};
         // POLICY ZHT
-        String[] POLICY_Menus_ZHT = { "Rules and Policies", "DPI-SSL", "DPI-SSH", "Security Services", "Anti-Spam",
-                "Capture ATP", "DNS Security", "Endpoint Security" };
+        String[] POLICY_Menus_ZHT = {"Rules and Policies", "DPI-SSL", "DPI-SSH", "Security Services", "Anti-Spam",
+                "Capture ATP", "DNS Security", "Endpoint Security"};
         // ------------------------------------------------------------------------------------------------------------------------------
         // New menu ENG
         List<String> HOME_MenusENGs = new ArrayList<>();
@@ -327,7 +328,7 @@ public class Test_vsDATA_ZE {
         String[] NETWORK_ZHTs = NETWORK_MenusZHTs.toArray(new String[0]);
         String[] OBJECT_ZHTs = OBJECT_MenusZHTs.toArray(new String[0]);
         String[] POLICY_ZHTs = POLICY_MenusZHTs.toArray(new String[0]);
-        String[][] Menu_ZHTs = { HOME_ZHTs, MONITOR_ZHTs, DEVICE_ZHTs, NETWORK_ZHTs, OBJECT_ZHTs, POLICY_ZHTs };
+        String[][] Menu_ZHTs = {HOME_ZHTs, MONITOR_ZHTs, DEVICE_ZHTs, NETWORK_ZHTs, OBJECT_ZHTs, POLICY_ZHTs};
 
         // Merge data ENG
         String[] HOME_ENGs = HOME_MenusENGs.toArray(new String[0]);
@@ -336,7 +337,7 @@ public class Test_vsDATA_ZE {
         String[] NETWORK_ENGs = NETWORK_MenusENGs.toArray(new String[0]);
         String[] OBJECT_ENGs = OBJECT_MenusENGs.toArray(new String[0]);
         String[] POLICY_ENGs = POLICY_MenusENGs.toArray(new String[0]);
-        String[][] Menu_ENGs = { HOME_ENGs, MONITOR_ENGs, DEVICE_ENGs, NETWORK_ENGs, OBJECT_ENGs, POLICY_ENGs };
+        String[][] Menu_ENGs = {HOME_ENGs, MONITOR_ENGs, DEVICE_ENGs, NETWORK_ENGs, OBJECT_ENGs, POLICY_ENGs};
 
         // ZHT version missing
         for (int i = 0; i < 6; i++) {

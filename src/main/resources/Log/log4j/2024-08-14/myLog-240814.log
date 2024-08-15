@@ -1,0 +1,240 @@
+2024-08-14 16:29:10,130: - INFO - : com.demo.apitest.Test_NavData_JPN > Before Navigate To...https://10.8.162.156[JPN]
+2024-08-14 16:29:10,254: - INFO - : com.demo.apitest.Test_NavData_JPN > Login to main page...
+2024-08-14 16:29:20,623: - INFO - : com.demo.apitest.Func_JPN > Element Not Found! >> Ready to login...
+2024-08-14 16:29:21,016: - INFO - : test_Step01_Login_JPN > [Pass]Take screenshot...
+2024-08-14 16:29:21,063: - INFO - : com.demo.apitest.Test_NavData_JPN > Switch to 'Non-Config' mode...
+2024-08-14 16:29:21,235: - INFO - : com.demo.apitest.Test_NavData_JPN > Data created for [JPN]!
+2024-08-14 16:29:23,314: - INFO - : com.demo.apitest.Func_JPN > 'HOME' Menu: ダッシュボード
+2024-08-14 16:29:23,330: - INFO - : com.demo.apitest.Func_JPN > 'HOME' Menu: システム
+2024-08-14 16:29:23,330: - INFO - : com.demo.apitest.Func_JPN > 'HOME' Menu: アクセス ポイント
+2024-08-14 16:29:23,381: - INFO - : com.demo.apitest.Func_JPN > 'HOME' Menu: キャプチャ ATP
+2024-08-14 16:29:23,381: - INFO - : com.demo.apitest.Func_JPN > 'HOME' Menu: トポロジ
+2024-08-14 16:29:23,397: - INFO - : com.demo.apitest.Func_JPN > 'HOME' Menu: 法的情報
+2024-08-14 16:29:23,397: - INFO - : com.demo.apitest.Func_JPN > 'HOME' Menu: API
+2024-08-14 16:29:23,397: - INFO - : com.demo.apitest.Func_JPN > ========================================================================
+2024-08-14 16:29:23,412: - INFO - : com.demo.apitest.Func_JPN > ALL MENU: 7
+2024-08-14 16:29:23,585: - INFO - : com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-14 16:29:23,585: - INFO - : com.demo.apitest.Test_NavData_JPN > Top menu 'HOME' is done!
+2024-08-14 16:29:25,490: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: リアルタイム グラフ
+2024-08-14 16:29:25,490: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: システム監視
+2024-08-14 16:29:25,505: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: プロトコル監視
+2024-08-14 16:29:25,521: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: ユーザ監視
+2024-08-14 16:29:25,521: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: 帯域幅管理監視
+2024-08-14 16:29:25,537: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: AppFlow
+2024-08-14 16:29:25,537: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: AppFlow 報告
+2024-08-14 16:29:25,552: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: AppFlow 監視
+2024-08-14 16:29:25,552: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: CTA レポート
+2024-08-14 16:29:25,568: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: SDWAN
+2024-08-14 16:29:25,568: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: SDWAN 監視
+2024-08-14 16:29:25,584: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: SD-WAN 接続
+2024-08-14 16:29:25,584: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: ログ
+2024-08-14 16:29:25,600: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: システム ログ
+2024-08-14 16:29:25,615: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: 監査ログ
+2024-08-14 16:29:25,631: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: 脅威ログ
+2024-08-14 16:29:25,647: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: ツールと監視
+2024-08-14 16:29:25,667: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: パケット監視
+2024-08-14 16:29:25,678: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: 接続
+2024-08-14 16:29:25,710: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: コア 0 プロセス
+2024-08-14 16:29:25,725: - INFO - : com.demo.apitest.Func_JPN > 'MONITOR' Menu: パケット再生
+2024-08-14 16:29:25,725: - INFO - : com.demo.apitest.Func_JPN > ========================================================================
+2024-08-14 16:29:25,725: - INFO - : com.demo.apitest.Func_JPN > ALL MENU: 21
+2024-08-14 16:29:25,757: - INFO - : com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-14 16:29:25,757: - INFO - : com.demo.apitest.Test_NavData_JPN > Top menu 'MONITOR' is done!
+2024-08-14 16:29:27,604: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 設定
+2024-08-14 16:29:27,604: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ライセンス
+2024-08-14 16:29:27,619: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 管理
+2024-08-14 16:29:27,638: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 時間
+2024-08-14 16:29:27,638: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 証明書
+2024-08-14 16:29:27,654: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: SNMP
+2024-08-14 16:29:27,669: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ファームウェアと設定
+2024-08-14 16:29:27,685: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 記憶装置
+2024-08-14 16:29:27,685: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 再起動
+2024-08-14 16:29:27,716: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 高可用性
+2024-08-14 16:29:27,732: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 状況
+2024-08-14 16:29:27,770: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 設定
+2024-08-14 16:29:27,779: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 詳細
+2024-08-14 16:29:27,795: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 監視
+2024-08-14 16:29:27,810: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ユーザ
+2024-08-14 16:29:27,842: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 状況
+2024-08-14 16:29:27,857: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 設定
+2024-08-14 16:29:27,873: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: パーティション
+2024-08-14 16:29:27,889: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ローカル ユーザとグループ
+2024-08-14 16:29:27,905: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ゲスト サービス
+2024-08-14 16:29:27,936: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ゲスト アカウント
+2024-08-14 16:29:27,952: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ゲスト状況
+2024-08-14 16:29:27,970: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: AppFlow
+2024-08-14 16:29:27,999: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: フロー報告
+2024-08-14 16:29:28,015: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: AppFlow エージェント
+2024-08-14 16:29:28,046: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ネットワーク アクセス制御
+2024-08-14 16:29:28,070: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 設定
+2024-08-14 16:29:28,093: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: セッション
+2024-08-14 16:29:28,109: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ログ
+2024-08-14 16:29:28,124: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 設定
+2024-08-14 16:29:28,140: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: Syslog
+2024-08-14 16:29:28,156: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 自動化
+2024-08-14 16:29:28,172: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 名前解決
+2024-08-14 16:29:28,188: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: レポート
+2024-08-14 16:29:28,203: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: AWS
+2024-08-14 16:29:28,219: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 診断
+2024-08-14 16:29:28,234: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: テクニカル サポート レポート
+2024-08-14 16:29:28,250: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ネットワーク設定の確認
+2024-08-14 16:29:28,271: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: DNS 名の調査
+2024-08-14 16:29:28,282: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ネットワーク パス
+2024-08-14 16:29:28,298: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: Ping
+2024-08-14 16:29:28,313: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ルート追跡
+2024-08-14 16:29:28,345: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: リアルタイム ブラックリスト
+2024-08-14 16:29:28,345: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 逆引き名前調査
+2024-08-14 16:29:28,371: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 上位接続
+2024-08-14 16:29:28,392: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 地域とボットネット
+2024-08-14 16:29:28,412: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: MX とバナー
+2024-08-14 16:29:28,427: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: グリッド確認
+2024-08-14 16:29:28,443: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: URL 格付け要求
+2024-08-14 16:29:28,471: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: PMTU 検出
+2024-08-14 16:29:28,475: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: スイッチ診断
+2024-08-14 16:29:28,490: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: スイッチ ネットワーク
+2024-08-14 16:29:28,507: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 概要
+2024-08-14 16:29:28,522: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: スイッチ
+2024-08-14 16:29:28,537: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: アクセス ポイント
+2024-08-14 16:29:28,553: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 設定
+2024-08-14 16:29:28,585: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ファームウェア管理
+2024-08-14 16:29:28,601: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: フロア プランの表示
+2024-08-14 16:29:28,617: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: ステーション状況
+2024-08-14 16:29:28,633: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: IDS
+2024-08-14 16:29:28,648: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 高度な IDP
+2024-08-14 16:29:28,680: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: パケット キャプチャ
+2024-08-14 16:29:28,696: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 仮想アクセス ポイント
+2024-08-14 16:29:28,712: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: RF 監視
+2024-08-14 16:29:28,743: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: RF 解析
+2024-08-14 16:29:28,759: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: RF スペクトラム
+2024-08-14 16:29:28,791: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: FairNet
+2024-08-14 16:29:28,807: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: Wi-Fi マルチメディア
+2024-08-14 16:29:28,823: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 3G/4G/LTE WWAN
+2024-08-14 16:29:28,839: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: Bluetooth LE
+2024-08-14 16:29:28,854: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: 無線管理
+2024-08-14 16:29:28,872: - INFO - : com.demo.apitest.Func_JPN > 'DEVICE' Menu: WWAN
+2024-08-14 16:29:28,872: - INFO - : com.demo.apitest.Func_JPN > ========================================================================
+2024-08-14 16:29:28,872: - INFO - : com.demo.apitest.Func_JPN > ALL MENU: 72
+2024-08-14 16:29:28,933: - INFO - : com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-14 16:29:28,933: - INFO - : com.demo.apitest.Test_NavData_JPN > Top menu 'DEVICE' is done!
+2024-08-14 16:29:31,082: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: システム
+2024-08-14 16:29:31,104: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: インターフェース
+2024-08-14 16:29:31,130: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: フェイルオーバーと負荷分散
+2024-08-14 16:29:31,177: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 近隣者検出
+2024-08-14 16:29:31,192: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: ARP
+2024-08-14 16:29:31,209: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: MAC IP アンチスプーフ
+2024-08-14 16:29:31,227: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: ウェブ プロキシ
+2024-08-14 16:29:31,240: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: PortShield グループ
+2024-08-14 16:29:31,255: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: VLAN 変換
+2024-08-14 16:29:31,272: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: IP ヘルパー
+2024-08-14 16:29:31,291: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 動的ルーティング
+2024-08-14 16:29:31,303: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: DHCP サーバ
+2024-08-14 16:29:31,318: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: マルチキャスト
+2024-08-14 16:29:31,334: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: ネットワーク監視
+2024-08-14 16:29:31,351: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: AWS 設定
+2024-08-14 16:29:31,377: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: ファイアウォール
+2024-08-14 16:29:31,397: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 詳細
+2024-08-14 16:29:31,413: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: フラッド防御
+2024-08-14 16:29:31,428: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: SSL 制御
+2024-08-14 16:29:31,450: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 暗号化制御
+2024-08-14 16:29:31,460: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: RBL フィルタ
+2024-08-14 16:29:31,478: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: VoIP
+2024-08-14 16:29:31,491: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 設定
+2024-08-14 16:29:31,523: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 通話状況
+2024-08-14 16:29:31,523: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: DNS
+2024-08-14 16:29:31,554: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 設定
+2024-08-14 16:29:31,570: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 動的 DNS
+2024-08-14 16:29:31,587: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: DNS プロキシ
+2024-08-14 16:29:31,602: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: スイッチング
+2024-08-14 16:29:31,617: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: VLAN トランク
+2024-08-14 16:29:31,633: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: L2 発見
+2024-08-14 16:29:31,649: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: リンク統合
+2024-08-14 16:29:31,669: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: ポート ミラーリング
+2024-08-14 16:29:31,680: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: SDWAN
+2024-08-14 16:29:31,697: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: グループ
+2024-08-14 16:29:31,712: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: SLA プローブ
+2024-08-14 16:29:31,729: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: SLA クラス オブジェクト
+2024-08-14 16:29:31,743: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: パス選択プロファイル
+2024-08-14 16:29:31,759: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: ルール
+2024-08-14 16:29:31,791: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: IPSec VPN
+2024-08-14 16:29:31,791: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: ルールと設定
+2024-08-14 16:29:31,822: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 詳細
+2024-08-14 16:29:31,838: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: VPN を越えた DHCP
+2024-08-14 16:29:31,854: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: L2TP サーバ
+2024-08-14 16:29:31,869: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: AWS VPN
+2024-08-14 16:29:31,885: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: SSL VPN
+2024-08-14 16:29:31,901: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 状況
+2024-08-14 16:29:31,917: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: サーバ設定
+2024-08-14 16:29:31,932: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: クライアント設定
+2024-08-14 16:29:31,948: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: ポータル設定
+2024-08-14 16:29:31,963: - INFO - : com.demo.apitest.Func_JPN > 'NETWORK' Menu: 仮想オフィス
+2024-08-14 16:29:31,963: - INFO - : com.demo.apitest.Func_JPN > ========================================================================
+2024-08-14 16:29:31,963: - INFO - : com.demo.apitest.Func_JPN > ALL MENU: 51
+2024-08-14 16:29:32,027: - INFO - : com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-14 16:29:32,027: - INFO - : com.demo.apitest.Test_NavData_JPN > Top menu 'NETWORK' is done!
+2024-08-14 16:29:33,612: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: 一致オブジェクト
+2024-08-14 16:29:33,627: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: ゾーン
+2024-08-14 16:29:33,643: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: アドレス
+2024-08-14 16:29:33,658: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: サービス
+2024-08-14 16:29:33,680: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: URI リスト
+2024-08-14 16:29:33,705: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: 評価
+2024-08-14 16:29:33,721: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: 一致オブジェクト
+2024-08-14 16:29:33,737: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: スケジュール
+2024-08-14 16:29:33,752: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: 動的グループ
+2024-08-14 16:29:33,780: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: 電子メール アドレス
+2024-08-14 16:29:33,784: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: プロファイル オブジェクト
+2024-08-14 16:29:33,799: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: エンドポイント セキュリティ
+2024-08-14 16:29:33,815: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: 帯域幅
+2024-08-14 16:29:33,832: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: QoS 級割
+2024-08-14 16:29:33,862: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: コンテンツ フィルタ
+2024-08-14 16:29:33,880: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: DHCP オプション
+2024-08-14 16:29:33,894: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: AWS
+2024-08-14 16:29:33,909: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: DNS フィルタ
+2024-08-14 16:29:33,925: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: 動作オブジェクト
+2024-08-14 16:29:33,941: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: アプリケーション ルールの動作
+2024-08-14 16:29:33,956: - INFO - : com.demo.apitest.Func_JPN > 'OBJECT' Menu: コンテンツ フィルタの動作
+2024-08-14 16:29:33,972: - INFO - : com.demo.apitest.Func_JPN > ========================================================================
+2024-08-14 16:29:33,972: - INFO - : com.demo.apitest.Func_JPN > ALL MENU: 21
+2024-08-14 16:29:34,023: - INFO - : com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-14 16:29:34,023: - INFO - : com.demo.apitest.Test_NavData_JPN > Top menu 'OBJECT' is done!
+2024-08-14 16:29:37,340: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: ルールとポリシー
+2024-08-14 16:29:37,340: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: アクセス ルール
+2024-08-14 16:29:37,356: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: NAT ルール
+2024-08-14 16:29:37,372: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: ルーティング ルール
+2024-08-14 16:29:37,403: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: DNS ルール
+2024-08-14 16:29:37,419: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: コンテンツ フィルタ ルール
+2024-08-14 16:29:37,435: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: アプリケーション ルール
+2024-08-14 16:29:37,467: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: エンドポイント ルール
+2024-08-14 16:29:37,486: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: DPI-SSL
+2024-08-14 16:29:37,530: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: クライアント SSL
+2024-08-14 16:29:37,550: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: サーバ SSL
+2024-08-14 16:29:37,562: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: DPI-SSH
+2024-08-14 16:29:37,578: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: 設定
+2024-08-14 16:29:37,587: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: セキュリティ サービス
+2024-08-14 16:29:37,594: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: サマリ
+2024-08-14 16:29:37,609: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: ゲートウェイ アンチウイルス
+2024-08-14 16:29:37,625: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: アンチスパイウェア
+2024-08-14 16:29:37,640: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: 侵入防御
+2024-08-14 16:29:37,640: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: 地域 IP フィルタ
+2024-08-14 16:29:37,656: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: ボットネット フィルタ
+2024-08-14 16:29:37,688: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: アプリケーション制御
+2024-08-14 16:29:37,704: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: コンテンツ フィルタ
+2024-08-14 16:29:37,720: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: アンチスパム
+2024-08-14 16:29:37,735: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: 状況
+2024-08-14 16:29:37,751: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: 設定
+2024-08-14 16:29:37,767: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: キャプチャ ATP
+2024-08-14 16:29:37,799: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: 設定
+2024-08-14 16:29:37,814: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: スキャン履歴
+2024-08-14 16:29:37,830: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: DNS セキュリティ
+2024-08-14 16:29:37,846: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: 設定
+2024-08-14 16:29:37,862: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: レポート
+2024-08-14 16:29:37,887: - INFO - : com.demo.apitest.Func_JPN > 'POLICY' Menu: エンドポイント セキュリティ
+2024-08-14 16:29:37,887: - INFO - : com.demo.apitest.Func_JPN > ========================================================================
+2024-08-14 16:29:37,887: - INFO - : com.demo.apitest.Func_JPN > ALL MENU: 32
+2024-08-14 16:29:37,925: - INFO - : com.demo.apitest.Test_NavData_JPN > Data updated for [JPN]!
+2024-08-14 16:29:37,925: - INFO - : com.demo.apitest.Test_NavData_JPN > Top menu 'POLICY' is done!
+2024-08-14 16:29:42,897: - INFO - : com.demo.apitest.Test_NavData_JPN > Info created for [JPN]!
+2024-08-14 16:29:42,897: - INFO - : com.demo.apitest.Test_NavData_JPN > Info updated for [JPN]!
+2024-08-14 16:29:42,897: - INFO - : com.demo.apitest.Test_NavData_JPN > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-08-14 16:29:42,897: - INFO - : com.demo.apitest.Test_NavData_JPN > ^          All Matched!          ^
+2024-08-14 16:29:42,897: - INFO - : com.demo.apitest.Test_NavData_JPN > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-08-14 16:29:43,260: - INFO - : test_Step02_MenuTop_JPN > [Pass]Take screenshot...

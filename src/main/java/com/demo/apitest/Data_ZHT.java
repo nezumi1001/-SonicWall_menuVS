@@ -15,7 +15,7 @@ public class Data_ZHT {
     public static File my_path = new File(System.getProperty("user.dir"));
     public static String[] chromeDriver_data = {"webdriver.chrome.driver",
             my_path.getParent() + "\\SonicWall_menuVS\\src\\main\\resources\\Driver\\chromedriver.exe"};
-    public static String Chrome_userData = "--user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data2";
+    public static String Chrome_userData = "--user-data-dir=C:\\Users\\wodem\\AppData\\Local\\Google\\Chrome\\User Data2";
 
     // Preempt
     public static String preempt_path = "//button[contains(text(),'非設定')]";
