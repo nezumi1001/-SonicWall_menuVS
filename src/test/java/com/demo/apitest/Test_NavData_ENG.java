@@ -47,11 +47,11 @@ public class Test_NavData_ENG {
         // [A]Go to DEVICE > Settings
         driver.get(Data_ENG.FirmwareSettings_url);
         // [A]Fix Box & SN shows unknown
-        mf.wait_element("xpath", Data_ENG.Version_path_01, "Version_path_01");
+        mf.wait_element("xpath", Data_ENG.CurrentFirmwareVersion, "Current Firmware Version");
         // [A]Get info
-        String Box_ENG = mf.wait_element("xpath", Data_ENG.Box_path, "Box_ENG").getText();
-        String SN_ENG = mf.wait_element("xpath", Data_ENG.SN_path, "SN_ENG").getText();
-        String Version_ENG = mf.wait_element("xpath", Data_ENG.Version_path_02, "Version_ENG").getText();
+        String Box_ENG = mf.wait_element("xpath", Data_ENG.Box_name, "Box_ENG").getText();
+        String SN_ENG = mf.wait_element("xpath", Data_ENG.SN_name, "SN_ENG").getText();
+        String Version_ENG = mf.wait_element("xpath", Data_ENG.FirmwareVersion, "Version_ENG").getText();
         info_ENGs.add(Box_ENG);
         info_ENGs.add(SN_ENG);
         info_ENGs.add(Version_ENG);
@@ -65,7 +65,6 @@ public class Test_NavData_ENG {
 
     // Actual data
     public List<String> actual_data(String top_menu) {
-//        List<String> actual_data = new ArrayList<String>();
         // [A]Page redirect
         for (int i = 0; i < Data_ENG.Menu_url.length; i++) {
             if (Data_ENG.Menu_url[i][0].equals(top_menu)) {
@@ -75,11 +74,11 @@ public class Test_NavData_ENG {
 
         // [A]Expand page
         mf.wait_element("xpath", Data_ENG.DarkMenu_LeftPane_path, "DarkMenu_LeftPane");
-        List<WebElement> Menu_darks = mf.find_elements("xpath", Data_ENG.DarkMenu_LeftPane_path);
+        List<WebElement> Menu_darks = mf.find_elements("xpath", Data_ENG.DarkMenu_LeftPane_path, "Dark menu on leftpane");
         for (WebElement Menu_dark : Menu_darks)
             mf.js_click(Menu_dark);
         mf.wait_element("xpath", Data_ENG.SubMenu_nested, "SubMenu_nested");
-        List<WebElement> Menu_alls = mf.find_elements("xpath", Data_ENG.LeftPane_path);
+        List<WebElement> Menu_alls = mf.find_elements("xpath", Data_ENG.LeftPane_path, "All menu on leftpane");
 //        actual_data.addAll(mf.expand_menu(Menu_alls, top_menu)); // option 1
 //        List<String> actual_data = new ArrayList<>(mf.expand_menu(Menu_alls, top_menu)); // option 2
 //        return actual_data;

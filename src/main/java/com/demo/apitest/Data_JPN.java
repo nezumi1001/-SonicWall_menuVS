@@ -7,7 +7,7 @@ public class Data_JPN {
     public static int check_list = 1;
 
     // Box info
-//    public static String baseUrl = "https://10.103.50.140"; // TZ 270W
+//    public static String baseUrl = "https://10.103.50.197"; // TZ 270W
 //    public static String baseUrl = "https://10.103.50.xxx"; // TZ 470
     public static String baseUrl = "https://10.8.162.156"; // NSA 2700
 
@@ -37,10 +37,10 @@ public class Data_JPN {
     // Firmware and Settings URL
     public static String FirmwareSettings_url = baseUrl + "/sonicui/7/m/mgmt/system/settings/firmware";
     // Box name
-    public static String Box_path = "//div[@class='fw-app-header__head__app-name sw-flexbox__flex-none']/span";
-    public static String SN_path = "//span[@class='fw-app-header__breadcrumb-device-name']";
-    public static String Version_path_01 = "//div[@class='sw-table-row__cell__wrapper sw-flexbox__flex sw-flexbox sw-flexbox--center-items']/div/div/div/span[1]";
-    public static String Version_path_02 = "//div[@class='sw-table-row__cell__wrapper sw-flexbox__flex sw-flexbox sw-flexbox--center-items']/div/div/div[2]";
+    public static String Box_name = "//div[@class='fw-app-header__head__app-name sw-flexbox__flex-none']/span";
+    public static String SN_name = "//span[@class='fw-app-header__breadcrumb-device-name']";
+    public static String CurrentFirmwareVersion = "//div[@class='sw-table-row__cell__wrapper sw-flexbox__flex sw-flexbox sw-flexbox--center-items']/div/div/div/span[1]";
+    public static String FirmwareVersion = "//div[@class='sw-table-row__cell__wrapper sw-flexbox__flex sw-flexbox sw-flexbox--center-items']/div/div/div[2]";
 
     // Top menu URL
     public static String[][] Menu_url = {

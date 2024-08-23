@@ -23,10 +23,13 @@ import com.relevantcodes.extentreports.LogStatus;
 public class Test_vsDATA_ZE {
     private final File my_path = new File(System.getProperty("user.dir"));
     //    private final Logger log = LogManager.getLogger(Test_NavData_ENG.class.getName());
-    private final Logger log = LogManager.getLogger(Test_vsDATA_ZE.class.getName());
+//    private final Logger log = LogManager.getLogger(Test_vsDATA_ZE.class.getName());
+    private final Logger log = LogManager.getLogger(this.getClass().getName());
     private int match = 0;
     private ExtentReports exReport;
     private ExtentTest exTest;
+    private List<String> MenusMiss_ZHT = new ArrayList<>();
+    private List<String> MenusMiss_ENG = new ArrayList<>();
 
     // Import data only (info ZHT)
     public List<String> info_ZHT() throws IOException {
@@ -82,29 +85,26 @@ public class Test_vsDATA_ZE {
         for (int data_column = 0; data_column < sheet.getRow(data_column).getLastCellNum(); data_column++) {
             for (int data_row = 0; data_row <= sheet.getLastRowNum(); data_row++) {
                 HSSFCell data_value = sheet.getRow(data_row).getCell(data_column);
+                // Go on to new column when arriving at the last row
                 if (data_value == null) {
                     continue;
                 }
                 String dataValue = data_value.getStringCellValue();
 
-                // Get data from each column
-                if (data_column == 0) {
-                    menu_HOME.add(dataValue);
-                } else if (data_column == 1) {
-                    menu_MONITOR.add(dataValue);
-                } else if (data_column == 2) {
-                    menu_DEVICE.add(dataValue);
-                } else if (data_column == 3) {
-                    menu_NETWORK.add(dataValue);
-                } else if (data_column == 4) {
-                    menu_OBJECT.add(dataValue);
-                } else if (data_column == 5) {
-                    menu_POLICY.add(dataValue);
+                switch (data_column){
+                    case 0 -> menu_HOME.add(dataValue);
+                    case 1 -> menu_MONITOR.add(dataValue);
+                    case 2 -> menu_DEVICE.add(dataValue);
+                    case 3 -> menu_NETWORK.add(dataValue);
+                    case 4 -> menu_OBJECT.add(dataValue);
+                    case 5 -> menu_POLICY.add(dataValue);
                 }
+
             }
         }
 
         // Merge data ZHT
+        // List<String> >> String[]
         String[] menu_HOMEs = menu_HOME.toArray(new String[0]);
         String[] menu_MONITORs = menu_MONITOR.toArray(new String[0]);
         String[] menu_DEVICEs = menu_DEVICE.toArray(new String[0]);
@@ -134,29 +134,26 @@ public class Test_vsDATA_ZE {
         for (int data_column = 0; data_column < sheet.getRow(data_column).getLastCellNum(); data_column++) {
             for (int data_row = 0; data_row <= sheet.getLastRowNum(); data_row++) {
                 HSSFCell data_value = sheet.getRow(data_row).getCell(data_column);
+                // Go on to new column when arriving at the last row
                 if (data_value == null) {
                     continue;
                 }
                 String dataValue = data_value.getStringCellValue();
 
-                // Get data from each column
-                if (data_column == 0) {
-                    menu_HOME.add(dataValue);
-                } else if (data_column == 1) {
-                    menu_MONITOR.add(dataValue);
-                } else if (data_column == 2) {
-                    menu_DEVICE.add(dataValue);
-                } else if (data_column == 3) {
-                    menu_NETWORK.add(dataValue);
-                } else if (data_column == 4) {
-                    menu_OBJECT.add(dataValue);
-                } else if (data_column == 5) {
-                    menu_POLICY.add(dataValue);
+                switch (data_column){
+                    case 0 -> menu_HOME.add(dataValue);
+                    case 1 -> menu_MONITOR.add(dataValue);
+                    case 2 -> menu_DEVICE.add(dataValue);
+                    case 3 -> menu_NETWORK.add(dataValue);
+                    case 4 -> menu_OBJECT.add(dataValue);
+                    case 5 -> menu_POLICY.add(dataValue);
                 }
+
             }
         }
 
-        // Merge data ENG
+        // Merge data JPN
+        // List<String> >> String[]
         String[] menu_HOMEs = menu_HOME.toArray(new String[0]);
         String[] menu_MONITORs = menu_MONITOR.toArray(new String[0]);
         String[] menu_DEVICEs = menu_DEVICE.toArray(new String[0]);
@@ -182,22 +179,6 @@ public class Test_vsDATA_ZE {
         List<String> OBJECT_MenusZHTs = new ArrayList<>();
         List<String> POLICY_MenusZHTs = new ArrayList<>();
 
-        // HOME ZHT
-        String[] HOME_Menus_ZHT = {"Dashboard", "Legal Information", "API"};
-        // MONITOR ZHT
-        String[] MONITOR_Menus_ZHT = {"Real-Time Charts", "AppFlow", "SDWAN", "Logs", "Tools & Monitors"};
-        // DEVICE ZHT
-        String[] DEVICE_Menus_ZHT = {"Settings (TOP)", "Internal Wireless", "High Availability", "Users", "AppFlow",
-                "Network Access Control", "Log", "Diagnostics", "Switch Network", "Access Points", "WWAN"};
-        // NETWORK ZHT
-        String[] NETWORK_Menus_ZHT = {"System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "IPSec VPN",
-                "SSL VPN"};
-        // OBJECT ZHT
-        String[] OBJECT_Menus_ZHT = {"Match Objects (TOP)", "Profile Objects", "Action Objects", "Signatures"};
-        // POLICY ZHT
-        String[] POLICY_Menus_ZHT = {"Rules and Policies", "DPI-SSL", "DPI-SSH", "Security Services", "Anti-Spam",
-                "Capture ATP", "DNS Security", "Endpoint Security"};
-        // ------------------------------------------------------------------------------------------------------------------------------
         // New menu ENG
         List<String> HOME_MenusENGs = new ArrayList<>();
         List<String> MONITOR_MenusENGs = new ArrayList<>();
@@ -206,6 +187,23 @@ public class Test_vsDATA_ZE {
         List<String> OBJECT_MenusENGs = new ArrayList<>();
         List<String> POLICY_MenusENGs = new ArrayList<>();
 
+        // Parent menu for each column
+        // HOME ENGZHT
+        String[] HOME_Menus_ENGZHT = {"Dashboard", "Legal Information", "API"};
+        // MONITOR ENGZHT
+        String[] MONITOR_Menus_ENGZHT = {"Real-Time Charts", "AppFlow", "SDWAN", "Logs", "Tools & Monitors"};
+        // DEVICE ENGZHT
+        String[] DEVICE_Menus_ENGZHT = {"Settings (TOP)", "Internal Wireless", "High Availability", "Users", "AppFlow",
+                "Network Access Control", "Log", "Diagnostics", "Switch Network", "Access Points", "WWAN"};
+        // NETWORK ENGZHT
+        String[] NETWORK_Menus_ENGZHT = {"System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "IPSec VPN",
+                "SSL VPN"};
+        // OBJECT ENGZHT
+        String[] OBJECT_Menus_ENGZHT = {"Match Objects (TOP)", "Profile Objects", "Action Objects", "Signatures"};
+        // POLICY ENGZHT
+        String[] POLICY_Menus_ENGZHT = {"Rules and Policies", "DPI-SSL", "DPI-SSH", "Security Services", "Anti-Spam",
+                "Capture ATP", "DNS Security", "Endpoint Security"};
+        // ------------------------------------------------------------------------------------------------------------------------------
         // --- Make new menu ---
         String main_menu = column_name[column_no];
 
@@ -216,19 +214,17 @@ public class Test_vsDATA_ZE {
             String MenusZHT_temp = MenusZHTs.get(i);
             int iTemp = i;
             int iMenu = 0;
-            if (main_menu.equals("HOME"))
-                MenusZHT_box = HOME_Menus_ZHT;
-            if (main_menu.equals("MONITOR"))
-                MenusZHT_box = MONITOR_Menus_ZHT;
-            if (main_menu.equals("DEVICE"))
-                MenusZHT_box = DEVICE_Menus_ZHT;
-            if (main_menu.equals("NETWORK"))
-                MenusZHT_box = NETWORK_Menus_ZHT;
-            if (main_menu.equals("OBJECT"))
-                MenusZHT_box = OBJECT_Menus_ZHT;
-            if (main_menu.equals("POLICY"))
-                MenusZHT_box = POLICY_Menus_ZHT;
 
+            switch (main_menu){
+                case "HOME" -> MenusZHT_box = HOME_Menus_ENGZHT;
+                case "MONITOR" -> MenusZHT_box = MONITOR_Menus_ENGZHT;
+                case "DEVICE" -> MenusZHT_box = DEVICE_Menus_ENGZHT;
+                case "NETWORK" -> MenusZHT_box = NETWORK_Menus_ENGZHT;
+                case "OBJECT" -> MenusZHT_box = OBJECT_Menus_ENGZHT;
+                case "POLICY" -> MenusZHT_box = POLICY_Menus_ENGZHT;
+            }
+
+            // Find parent menu, yes >> end loop, no >> sub-menu (index - 1) continue to find parent menu
             while (iMenu == 0) {
                 for (String menusZHTBox : Objects.requireNonNull(MenusZHT_box)) {
                     if (MenusZHT_temp.equals(menusZHTBox)) {
@@ -240,6 +236,7 @@ public class Test_vsDATA_ZE {
                     MenusZHT_temp = MenusZHTs.get(iTemp = iTemp - 1);
             }
 
+            // Add mark to parent/sub-menu, parent menu >> parent menu, sub-menu >> parent menu > sub-menu
             for (String menusZHTBox : MenusZHT_box) {
                 if (MenusZHT_temp.equals(menusZHTBox)) {
                     if (iTemp == i) {
@@ -260,18 +257,19 @@ public class Test_vsDATA_ZE {
             int iTemp = i;
             int iMenu = 0;
             if (main_menu.equals("HOME"))
-                MenusENG_box = HOME_Menus_ZHT;
+                MenusENG_box = HOME_Menus_ENGZHT;
             if (main_menu.equals("MONITOR"))
-                MenusENG_box = MONITOR_Menus_ZHT;
+                MenusENG_box = MONITOR_Menus_ENGZHT;
             if (main_menu.equals("DEVICE"))
-                MenusENG_box = DEVICE_Menus_ZHT;
+                MenusENG_box = DEVICE_Menus_ENGZHT;
             if (main_menu.equals("NETWORK"))
-                MenusENG_box = NETWORK_Menus_ZHT;
+                MenusENG_box = NETWORK_Menus_ENGZHT;
             if (main_menu.equals("OBJECT"))
-                MenusENG_box = OBJECT_Menus_ZHT;
+                MenusENG_box = OBJECT_Menus_ENGZHT;
             if (main_menu.equals("POLICY"))
-                MenusENG_box = POLICY_Menus_ZHT;
+                MenusENG_box = POLICY_Menus_ENGZHT;
 
+            // Find parent menu, yes >> end loop, no >> sub-menu (index - 1) continue to find parent menu
             while (iMenu == 0) {
                 for (String menusENGBox : Objects.requireNonNull(MenusENG_box)) {
                     if (MenusENG_temp.equals(menusENGBox)) {
@@ -283,6 +281,7 @@ public class Test_vsDATA_ZE {
                     MenusENG_temp = MenusENGs.get(iTemp = iTemp - 1);
             }
 
+            // Add mark to parent/sub-menu, parent menu >> parent menu, sub-menu >> parent menu > sub-menu
             for (String menusENGBox : MenusENG_box) {
                 if (MenusENG_temp.equals(menusENGBox)) {
                     if (iTemp == i) {
@@ -295,33 +294,35 @@ public class Test_vsDATA_ZE {
 
         }
 
-        if (main_menu.equals("HOME")) {
-            HOME_MenusZHTs = MenusZHTs_temp;
-            HOME_MenusENGs = MenusENGs_temp;
-        }
-        if (main_menu.equals("MONITOR")) {
-            MONITOR_MenusZHTs = MenusZHTs_temp;
-            MONITOR_MenusENGs = MenusENGs_temp;
-        }
-        if (main_menu.equals("DEVICE")) {
-            DEVICE_MenusZHTs = MenusZHTs_temp;
-            DEVICE_MenusENGs = MenusENGs_temp;
-        }
-        if (main_menu.equals("NETWORK")) {
-            NETWORK_MenusZHTs = MenusZHTs_temp;
-            NETWORK_MenusENGs = MenusENGs_temp;
-        }
-        if (main_menu.equals("OBJECT")) {
-            OBJECT_MenusZHTs = MenusZHTs_temp;
-            OBJECT_MenusENGs = MenusENGs_temp;
-        }
-        if (main_menu.equals("POLICY")) {
-            POLICY_MenusZHTs = MenusZHTs_temp;
-            POLICY_MenusENGs = MenusENGs_temp;
+        switch (main_menu){
+            case "HOME":
+                HOME_MenusZHTs = MenusZHTs_temp;
+                HOME_MenusENGs = MenusENGs_temp;
+                break;
+            case "MONITOR":
+                MONITOR_MenusZHTs = MenusZHTs_temp;
+                MONITOR_MenusENGs = MenusENGs_temp;
+                break;
+            case "DEVICE":
+                DEVICE_MenusZHTs = MenusZHTs_temp;
+                DEVICE_MenusENGs = MenusENGs_temp;
+                break;
+            case "NETWORK":
+                NETWORK_MenusZHTs = MenusZHTs_temp;
+                NETWORK_MenusENGs = MenusENGs_temp;
+                break;
+            case "OBJECT":
+                OBJECT_MenusZHTs = MenusZHTs_temp;
+                OBJECT_MenusENGs = MenusENGs_temp;
+                break;
+            case "POLICY":
+                POLICY_MenusZHTs = MenusZHTs_temp;
+                POLICY_MenusENGs = MenusENGs_temp;
+                break;
         }
 
         // --- Final VS ---
-        // Merge data ZHT & ENG
+        // Merge data ZHT
         String[] HOME_ZHTs = HOME_MenusZHTs.toArray(new String[0]);
         String[] MONITOR_ZHTs = MONITOR_MenusZHTs.toArray(new String[0]);
         String[] DEVICE_ZHTs = DEVICE_MenusZHTs.toArray(new String[0]);
@@ -348,8 +349,7 @@ public class Test_vsDATA_ZE {
                     if (MenuENG.contains(" (TOP)")) {
                         MenuENG = MenuENG.replace(" (TOP)", "");
                     }
-                    // [L]Log
-                    log_message(this.getClass().getName(), "[ZHT] version missing: " + main_menu + " > " + MenuENG);
+                    MenusMiss_ZHT.add(main_menu + " > " + MenuENG);
                     match++;
                 }
             }
@@ -357,15 +357,14 @@ public class Test_vsDATA_ZE {
 
         // ENG version missing
         for (int i = 0; i < 6; i++) {
-            String[] MenuZHTs = Menu_ZHTs[i];
             List<String> MenuENGs = Arrays.asList(Menu_ENGs[i]);
+            String[] MenuZHTs = Menu_ZHTs[i];
             for (String MenuZHT : MenuZHTs) {
                 if (!MenuENGs.contains(MenuZHT)) {
                     if (MenuZHT.contains(" (TOP)")) {
                         MenuZHT = MenuZHT.replace(" (TOP)", "");
                     }
-                    // [L]Log
-                    log_message(this.getClass().getName(), "[ENG] version missing: " + main_menu + " > " + MenuZHT);
+                    MenusMiss_ENG.add(main_menu + " > " + MenuZHT);
                     match++;
                 }
             }
@@ -398,6 +397,11 @@ public class Test_vsDATA_ZE {
         start_exReport();
 
         // Get data ZHT & ENG
+        /*{
+            {"Dashboard", "System", "Access Points", "Capture ATP", "Topology", "Legal Information", "API"},
+            {"aa", "bb"...},
+            ...
+        }*/
         String[][] Menus_ZHTs = Box_ZHT();
         String[][] Menus_ENGs = box_ENG();
 
@@ -426,17 +430,28 @@ public class Test_vsDATA_ZE {
         log_message(this.getClass().getName(), "--------------------------------------------------------------------");
 
         // Compare data ZHT & ENG
+        // String[] >> List<String>
         for (int i = 0; i < 6; i++) {
             List<String> MenusZHTs = Arrays.asList(Menus_ZHTs[i]);
             List<String> MenusENGs = Arrays.asList(Menus_ENGs[i]);
             match = missing_page(i, MenusZHTs, MenusENGs);
         }
-        // Completely Match!
+        // All match or not
         if (match == 0) {
             log_message(this.getClass().getName(), "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
             log_message(this.getClass().getName(), "^          All Matched!          ^");
             log_message(this.getClass().getName(), "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-//			System.out.println("********** All matched! **********");
+        }else{
+            // [ZHT] version missing
+            for (String MenusMissZHT : MenusMiss_ZHT) {
+                log_message(this.getClass().getName(), "[ZHT] version missing: " + MenusMissZHT);
+            }
+            // [ENG] version missing
+            for (String MenusMissENG : MenusMiss_ENG) {
+                log_message(this.getClass().getName(), "[ENG] version missing: " + MenusMissENG);
+            }
+
+            log_message(this.getClass().getName(), "[ENG] & [ZHT] mismatch count: " + match);
         }
 
         close_exReport();

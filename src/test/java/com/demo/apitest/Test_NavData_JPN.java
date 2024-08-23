@@ -28,7 +28,6 @@ public class Test_NavData_JPN {
         chromOptions.addArguments("--lang=ja-JP");
         chromOptions.addArguments("--incognito");
         chromOptions.addArguments("--ignore-certificate-errors");
-//		chromOptions.addArguments("window-size=1920, 1080");
         chromOptions.addArguments("window-size=1920, 3000");
         chromOptions.addArguments("--headless");
         driver = new ChromeDriver(chromOptions);
@@ -44,11 +43,11 @@ public class Test_NavData_JPN {
         // [A]Go to DEVICE > Settings
         driver.get(Data_JPN.FirmwareSettings_url);
         // [A]Fix Box & SN shows unknown
-        mf.wait_element("xpath", Data_JPN.Version_path_01, "Version_path_01");
+        mf.wait_element("xpath", Data_JPN.CurrentFirmwareVersion, "Current Firmware Version");
         // [A]Get info
-        String Box_JPN = mf.wait_element("xpath", Data_JPN.Box_path, "Box_JPN").getText();
-        String SN_JPN = mf.wait_element("xpath", Data_JPN.SN_path, "SN_JPN").getText();
-        String Version_JPN = mf.wait_element("xpath", Data_JPN.Version_path_02, "Version_JPN").getText();
+        String Box_JPN = mf.wait_element("xpath", Data_JPN.Box_name, "Box_JPN").getText();
+        String SN_JPN = mf.wait_element("xpath", Data_JPN.SN_name, "SN_JPN").getText();
+        String Version_JPN = mf.wait_element("xpath", Data_JPN.FirmwareVersion, "Version_JPN").getText();
         info_JPNs.add(Box_JPN);
         info_JPNs.add(SN_JPN);
         info_JPNs.add(Version_JPN);
@@ -71,13 +70,13 @@ public class Test_NavData_JPN {
 
         // [A]Expand page
         mf.wait_element("xpath", Data_JPN.DarkMenu_LeftPane_path, "DarkMenu_LeftPane");
-        List<WebElement> Menu_darks = mf.find_elements("xpath", Data_JPN.DarkMenu_LeftPane_path);
+        List<WebElement> Menu_darks = mf.find_elements("xpath", Data_JPN.DarkMenu_LeftPane_path, "Dark menu on leftpane");
         for (WebElement Menu_dark : Menu_darks) {
             mf.js_click(Menu_dark);
         }
 
         mf.wait_element("xpath", Data_JPN.SubMenu_nested, "SubMenu_nested");
-        List<WebElement> Menu_alls = mf.find_elements("xpath", Data_JPN.LeftPane_path);
+        List<WebElement> Menu_alls = mf.find_elements("xpath", Data_JPN.LeftPane_path, "All menu on leftpane");
         return new ArrayList<>(mf.expand_menu(Menu_alls, top_menu));
     }
 

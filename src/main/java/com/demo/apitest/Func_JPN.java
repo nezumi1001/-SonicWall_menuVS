@@ -69,13 +69,13 @@ public class Func_JPN {
     }
 
     // Log message[S]
-    public void log_message(String test_name, String info) {
+    public void log_message(String class_name, String info) {
         // log4j
-        log.info("{} > {}", test_name, info);
+        log.info("{} > {}", class_name, info);
         // extentreports
-        exTest.log(LogStatus.INFO, test_name + " > " + info);
+        exTest.log(LogStatus.INFO, class_name + " > " + info);
         // TestNG output
-        Reporter.log("[S]ReportLog >> " + test_name + " > " + info, true);
+        Reporter.log("[S]ReportLog >> " + class_name + " > " + info, true);
     }
 
     // Date time
@@ -118,7 +118,7 @@ public class Func_JPN {
     }
 
     // Find elements
-    public List<WebElement> find_elements(String type, String path) {
+    public List<WebElement> find_elements(String type, String path, String msg) {
         try {
             switch (type) {
                 case "id" -> ges = driver.findElements(By.id(path));
@@ -127,7 +127,7 @@ public class Func_JPN {
                 case "xpath" -> ges = driver.findElements(By.xpath(path));
             }
         } catch (Exception e) {
-            log_message(this.getClass().getName(), "Elements Not Found!" + " >> " + "All missing");
+            log_message(this.getClass().getName(), "Element Groups Not Found!" + " >> " + msg);
             return null; // keep running
         }
         return ges;
@@ -149,7 +149,6 @@ public class Func_JPN {
         }
 
         // --- Change duplicated menu >> xx (TOP) ---
-//        System.out.println("Data_JPN.check_list: " + Data_JPN.check_list);
         if (Data_JPN.check_list == 0) {
             log_message(this.getClass().getName(), "========================================================================");
             if (top_menu.equals("DEVICE") || top_menu.equals("OBJECT")) {
@@ -162,8 +161,7 @@ public class Func_JPN {
                     // "Object > Match Objects" >> "Object > Match Objects (TOP)"
                     if (actual_data.get(j).equals("Match Objects") && actual_data.get(j + 1).equals("Zones")) {
                         actual_data.set(j, "Match Objects (TOP)");
-                        log_message(this.getClass().getName(),
-                                "'" + top_menu + "'" + " Menu: " + "Match Objects >> Match Objects (TOP)");
+                        log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + "Match Objects >> Match Objects (TOP)");
                     }
                 }
             } else {
@@ -182,7 +180,7 @@ public class Func_JPN {
     public void create_info() throws IOException {
         HSSFWorkbook workbook = new HSSFWorkbook();
         HSSFSheet sheet = workbook.createSheet("JPN");
-        // Create 100 row
+        // Create 3 row
         for (int new_row = 0; new_row < 3; new_row++) {
             sheet.createRow(new_row);
         }
@@ -282,21 +280,16 @@ public class Func_JPN {
         String text_update = null;
         String[][] leftPane = null;
 
-        if (top_menu.equals("HOME"))
-            leftPane = Data_JPN.leftPane_HOME;
-        if (top_menu.equals("MONITOR"))
-            leftPane = Data_JPN.leftPane_MONITOR;
-        if (top_menu.equals("DEVICE"))
-            leftPane = Data_JPN.leftPane_DEVICE;
-        if (top_menu.equals("NETWORK"))
-            leftPane = Data_JPN.leftPane_NETWORK;
-        if (top_menu.equals("OBJECT"))
-            leftPane = Data_JPN.leftPane_OBJECT;
-        if (top_menu.equals("POLICY"))
-            leftPane = Data_JPN.leftPane_POLICY;
+        switch (top_menu) {
+            case "HOME" -> leftPane = Data_JPN.leftPane_HOME;
+            case "MONITOR" -> leftPane = Data_JPN.leftPane_MONITOR;
+            case "DEVICE" -> leftPane = Data_JPN.leftPane_DEVICE;
+            case "NETWORK" -> leftPane = Data_JPN.leftPane_NETWORK;
+            case "OBJECT" -> leftPane = Data_JPN.leftPane_OBJECT;
+            case "POLICY" -> leftPane = Data_JPN.leftPane_POLICY;
+        }
 
         // Check list for JPN > JPN
-//        System.out.println("Data_JPN.check_list: " + Data_JPN.check_list);
         if (Data_JPN.check_list == 1) {
             int i;
             for (i = 0; i < Objects.requireNonNull(leftPane).length; i++) {
@@ -306,6 +299,7 @@ public class Func_JPN {
                 }
             }
 
+            // Found new menu
             if (i >= leftPane.length) {
                 text_update = "(NEW) " + text_JPN;
                 newMenu_JPN += 1;
@@ -315,14 +309,7 @@ public class Func_JPN {
         }
 
         // Check list for JPN > ENG
-//        System.out.println("Data_JPN.check_list: " + Data_JPN.check_list);
         if (Data_JPN.check_list == 0) {
-            /*for (int i = 0; i < leftPane.length; i++) {
-                if (leftPane[i][0].equals(text_JPN)) {
-                    text_update = leftPane[i][1];
-                    break;
-                }
-            }*/
             for (String[] strings : Objects.requireNonNull(leftPane)) {
                 if (strings[0].equals(text_JPN)) {
                     text_update = strings[1];

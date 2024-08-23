@@ -44,11 +44,11 @@ public class Test_NavData_ZHT {
         // [A]Go to DEVICE > Settings
         driver.get(Data_ZHT.FirmwareSettings_url);
         // [A]Fix Box & SN shows unknown
-        mf.wait_element("xpath", Data_ZHT.Version_path_01, "Version_path_01");
+        mf.wait_element("xpath", Data_ZHT.CurrentFirmwareVersion, "Current Firmware Version");
         // [A]Get info
-        String Box_ZHT = mf.wait_element("xpath", Data_ZHT.Box_path, "Box_ZHT").getText();
-        String SN_ZHT = mf.wait_element("xpath", Data_ZHT.SN_path, "SN_ZHT").getText();
-        String Version_ZHT = mf.wait_element("xpath", Data_ZHT.Version_path_02, "Version_ZHT").getText();
+        String Box_ZHT = mf.wait_element("xpath", Data_ZHT.Box_name, "Box_ZHT").getText();
+        String SN_ZHT = mf.wait_element("xpath", Data_ZHT.SN_name, "SN_ZHT").getText();
+        String Version_ZHT = mf.wait_element("xpath", Data_ZHT.FirmwareVersion, "Version_ZHT").getText();
         info_ZHTs.add(Box_ZHT);
         info_ZHTs.add(SN_ZHT);
         info_ZHTs.add(Version_ZHT);
@@ -71,11 +71,11 @@ public class Test_NavData_ZHT {
 
         // [A]Expand page
         mf.wait_element("xpath", Data_ZHT.DarkMenu_LeftPane_path, "DarkMenu_LeftPane");
-        List<WebElement> Menu_darks = mf.find_elements("xpath", Data_ZHT.DarkMenu_LeftPane_path);
+        List<WebElement> Menu_darks = mf.find_elements("xpath", Data_ZHT.DarkMenu_LeftPane_path, "Dark menu on leftpane");
         for (WebElement Menu_dark : Menu_darks)
             mf.js_click(Menu_dark);
         mf.wait_element("xpath", Data_ZHT.SubMenu_nested, "SubMenu_nested");
-        List<WebElement> Menu_alls = mf.find_elements("xpath", Data_ZHT.LeftPane_path);
+        List<WebElement> Menu_alls = mf.find_elements("xpath", Data_ZHT.LeftPane_path, "All menu on leftpane");
         return new ArrayList<>(mf.expand_menu(Menu_alls, top_menu));
     }
 

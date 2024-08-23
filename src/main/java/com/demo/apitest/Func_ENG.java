@@ -64,14 +64,13 @@ public class Func_ENG {
     }
 
     // Log message[S]
-    public void log_message(String test_name, String info) {
+    public void log_message(String class_name, String info) {
         // log4j
-//        log.info(test_name + " > " + info);
-        log.info("{} > {}", test_name, info);
+        log.info("{} > {}", class_name, info);
         // extentreports
-        exTest.log(LogStatus.INFO, test_name + " > " + info);
+        exTest.log(LogStatus.INFO, class_name + " > " + info);
         // TestNG output
-        Reporter.log("[S]ReportLog >> " + test_name + " > " + info, true);
+        Reporter.log("[S]ReportLog >> " + class_name + " > " + info, true);
     }
 
     // Date time
@@ -127,7 +126,7 @@ public class Func_ENG {
     }
 
     // Find elements
-    public List<WebElement> find_elements(String type, String path) {
+    public List<WebElement> find_elements(String type, String path, String msg) {
         try {
             /*if (type.equals("id")) {
                 ges = driver.findElements(By.id(path));
@@ -145,7 +144,7 @@ public class Func_ENG {
                 case "xpath" -> ges = driver.findElements(By.xpath(path));
             }
         } catch (Exception e) {
-            log_message(this.getClass().getName(), "Elements Not Found!" + " >> " + "All missing");
+            log_message(this.getClass().getName(), "Element Groups Not Found!" + " >> " + msg);
             return null; // keep running
         }
         return ges;
@@ -197,7 +196,7 @@ public class Func_ENG {
     public void create_info() throws IOException {
         HSSFWorkbook workbook = new HSSFWorkbook();
         HSSFSheet sheet = workbook.createSheet("ENG");
-        // Create 100 row
+        // Create 3 row
         for (int new_row = 0; new_row < 3; new_row++) {
             sheet.createRow(new_row);
         }
