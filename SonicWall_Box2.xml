@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SonicWall TestSuite" parallel="classes"
+       thread-count="2">
+    <test name="Menu Test ENG/JPN/ZHT">
+        <classes>
+            <class name="com.demo.apitest.Test_NavData_ENG"/>
+            <class name="com.demo.apitest.Test_NavData_JPN"/>
+            <!-- <class name="com.demo.apitest.Test_NavData_JPN"></class> -->
+            <!-- <class name="com.demo.apitest.Test_NavData_ZHT"></class> -->
+        </classes>
+    </test>
+    <test name="Menu Compare JE/ZE">
+        <classes>
+            <class name="com.demo.apitest.Test_vsDATA_JE"/>
+            <!-- <class name="com.demo.apitest.Test_vsDATA_JE"></class> -->
+            <!-- <class name="com.demo.apitest.Test_vsDATA_ZE"></class> -->
+        </classes>
+    </test>
+</suite>
