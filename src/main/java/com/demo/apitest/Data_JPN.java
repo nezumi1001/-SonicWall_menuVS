@@ -3,6 +3,11 @@ package com.demo.apitest;
 import java.io.File;
 
 public class Data_JPN {
+
+    // Git gogogo !!!!!!!!!!!!!!
+    // Git gogogo !!!!!!!!!!!!!!
+    // Git gogogo !!!!!!!!!!!!!!
+
     // Check list
     public static int check_list = 1;
 
