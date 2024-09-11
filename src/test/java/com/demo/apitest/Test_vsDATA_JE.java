@@ -88,7 +88,7 @@ public class Test_vsDATA_JE {
                 }
                 String dataValue = data_value.getStringCellValue();
 
-                switch (data_column){
+                switch (data_column) {
                     case 0 -> menu_HOME.add(dataValue);
                     case 1 -> menu_MONITOR.add(dataValue);
                     case 2 -> menu_DEVICE.add(dataValue);
@@ -137,7 +137,7 @@ public class Test_vsDATA_JE {
                 }
                 String dataValue = data_value.getStringCellValue();
 
-                switch (data_column){
+                switch (data_column) {
                     case 0 -> menu_HOME.add(dataValue);
                     case 1 -> menu_MONITOR.add(dataValue);
                     case 2 -> menu_DEVICE.add(dataValue);
@@ -193,7 +193,7 @@ public class Test_vsDATA_JE {
         String[] DEVICE_Menus_ENGJPN = {"Settings (TOP)", "Internal Wireless", "High Availability", "Users", "AppFlow",
                 "Network Access Control", "Log", "Diagnostics", "Switch Network", "Access Points", "WWAN"};
         // NETWORK ENGJPN
-        String[] NETWORK_Menus_ENGJPN = {"System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "IPSec VPN",
+        String[] NETWORK_Menus_ENGJPN = {"System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "Cloud Secure Edge", "IPSec VPN",
                 "SSL VPN"};
         // OBJECT ENGJPN
         String[] OBJECT_Menus_ENGJPN = {"Match Objects (TOP)", "Profile Objects", "Action Objects", "Signatures"};
@@ -212,7 +212,7 @@ public class Test_vsDATA_JE {
             int iTemp = i;
             int iMenu = 0;
 
-            switch (main_menu){
+            switch (main_menu) {
                 case "HOME" -> MenusJPN_box = HOME_Menus_ENGJPN;
                 case "MONITOR" -> MenusJPN_box = MONITOR_Menus_ENGJPN;
                 case "DEVICE" -> MenusJPN_box = DEVICE_Menus_ENGJPN;
@@ -253,7 +253,7 @@ public class Test_vsDATA_JE {
             String MenusENG_temp = MenusENGs.get(i);
             int iTemp = i;
             int iMenu = 0;
-            
+
             if (main_menu.equals("HOME"))
                 MenusENG_box = HOME_Menus_ENGJPN;
             if (main_menu.equals("MONITOR"))
@@ -292,7 +292,7 @@ public class Test_vsDATA_JE {
 
         }
 
-        switch (main_menu){
+        switch (main_menu) {
             case "HOME":
                 HOME_MenusJPNs = MenusJPNs_temp;
                 HOME_MenusENGs = MenusENGs_temp;
@@ -440,7 +440,7 @@ public class Test_vsDATA_JE {
             log_message(this.getClass().getName(), "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
             log_message(this.getClass().getName(), "^          All Matched!          ^");
             log_message(this.getClass().getName(), "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-        }else{
+        } else {
             // [JPN] version missing
             for (String MenusMissJPN : MenusMiss_JPN) {
                 log_message(this.getClass().getName(), "[JPN] version missing: " + MenusMissJPN);

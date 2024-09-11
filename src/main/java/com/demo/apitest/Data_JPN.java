@@ -12,9 +12,9 @@ public class Data_JPN {
     public static int check_list = 1;
 
     // Box info
-//    public static String baseUrl = "https://10.103.50.197"; // TZ 270W
-//    public static String baseUrl = "https://10.103.50.xxx"; // TZ 470
-    public static String baseUrl = "https://10.8.162.156"; // NSA 2700
+    public static String baseUrl = "https://10.103.50.101"; // TZ 270W
+//    public static String baseUrl = "https://10.103.50.153"; // TZ 470
+//    public static String baseUrl = "https://10.8.162.156"; // NSA 2700
 
     // ChromeDriver Settings
     public static File my_path = new File(System.getProperty("user.dir"));
@@ -73,7 +73,8 @@ public class Data_JPN {
             {"キャプチャ ATP", "Capture ATP"},
             {"トポロジ", "Topology"},
             {"法的情報", "Legal Information"},
-            {"API", "API"}};
+            {"API", "API"}
+    };
 
     // MONITOR
     public static String[][] leftPane_MONITOR = {
@@ -98,7 +99,8 @@ public class Data_JPN {
             {"パケット監視", "Packet Monitor"},
             {"接続", "Connections"},
             {"コア 0 プロセス", "Core 0 Processes"},
-            {"パケット再生", "Packet Replay"}};
+            {"パケット再生", "Packet Replay"}
+    };
 
     // DEVICE
     public static String[][] leftPane_DEVICE = {
@@ -172,7 +174,8 @@ public class Data_JPN {
             {"3G/4G/LTE WWAN", "3G/4G/LTE WWAN"},
             {"Bluetooth LE", "Bluetooth LE"},
             {"無線管理", "Radio Management"},
-            {"WWAN", "WWAN"}};
+            {"WWAN", "WWAN"}
+    };
 
     // NETWORK
     public static String[][] leftPane_NETWORK = {
@@ -216,6 +219,11 @@ public class Data_JPN {
             {"SLA クラス オブジェクト", "SLA Class Objects"},
             {"パス選択プロファイル", "Path Selection Profiles"},
             {"ルール", "Rules"},
+
+            {"Cloud Secure Edge", "Cloud Secure Edge"},
+            {"Status", "Status"},
+            {"Access Settings", "Access Settings"},
+
             {"IPSec VPN", "IPSec VPN"},
             {"ルールと設定", "Rules and Settings"},
             {"VPN を越えた DHCP", "DHCP over VPN"},
@@ -226,7 +234,8 @@ public class Data_JPN {
             {"サーバ設定", "Server Settings"},
             {"クライアント設定", "Client Settings"},
             {"ポータル設定", "Portal Settings"},
-            {"仮想オフィス", "Virtual Office"}};
+            {"仮想オフィス", "Virtual Office"}
+    };
 
     // OBJECT
     public static String[][] leftPane_OBJECT = {
@@ -250,7 +259,8 @@ public class Data_JPN {
             {"DNS フィルタ", "DNS Filtering"},
             {"動作オブジェクト", "Action Objects"},
             {"アプリケーション ルールの動作", "App Rule Actions"},
-            {"コンテンツ フィルタの動作", "Content Filter Actions"}};
+            {"コンテンツ フィルタの動作", "Content Filter Actions"}
+    };
 
     // POLICY
     public static String[][] leftPane_POLICY = {
@@ -292,6 +302,7 @@ public class Data_JPN {
             {"スキャン履歴", "Scanning History"},
             {"DNS セキュリティ", "DNS Security"},
             {"レポート", "Reports"},
-            {"エンドポイント セキュリティ", "Endpoint Security"}};
+            {"エンドポイント セキュリティ", "Endpoint Security"}
+    };
 
 }

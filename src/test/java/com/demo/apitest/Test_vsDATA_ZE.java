@@ -1,13 +1,8 @@
 package com.demo.apitest;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
-
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.hssf.usermodel.HSSFCell;
@@ -16,9 +11,13 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 
 public class Test_vsDATA_ZE {
     private final File my_path = new File(System.getProperty("user.dir"));
@@ -91,7 +90,7 @@ public class Test_vsDATA_ZE {
                 }
                 String dataValue = data_value.getStringCellValue();
 
-                switch (data_column){
+                switch (data_column) {
                     case 0 -> menu_HOME.add(dataValue);
                     case 1 -> menu_MONITOR.add(dataValue);
                     case 2 -> menu_DEVICE.add(dataValue);
@@ -140,7 +139,7 @@ public class Test_vsDATA_ZE {
                 }
                 String dataValue = data_value.getStringCellValue();
 
-                switch (data_column){
+                switch (data_column) {
                     case 0 -> menu_HOME.add(dataValue);
                     case 1 -> menu_MONITOR.add(dataValue);
                     case 2 -> menu_DEVICE.add(dataValue);
@@ -196,7 +195,7 @@ public class Test_vsDATA_ZE {
         String[] DEVICE_Menus_ENGZHT = {"Settings (TOP)", "Internal Wireless", "High Availability", "Users", "AppFlow",
                 "Network Access Control", "Log", "Diagnostics", "Switch Network", "Access Points", "WWAN"};
         // NETWORK ENGZHT
-        String[] NETWORK_Menus_ENGZHT = {"System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "IPSec VPN",
+        String[] NETWORK_Menus_ENGZHT = {"System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "Cloud Secure Edge", "IPSec VPN",
                 "SSL VPN"};
         // OBJECT ENGZHT
         String[] OBJECT_Menus_ENGZHT = {"Match Objects (TOP)", "Profile Objects", "Action Objects", "Signatures"};
@@ -215,7 +214,7 @@ public class Test_vsDATA_ZE {
             int iTemp = i;
             int iMenu = 0;
 
-            switch (main_menu){
+            switch (main_menu) {
                 case "HOME" -> MenusZHT_box = HOME_Menus_ENGZHT;
                 case "MONITOR" -> MenusZHT_box = MONITOR_Menus_ENGZHT;
                 case "DEVICE" -> MenusZHT_box = DEVICE_Menus_ENGZHT;
@@ -294,7 +293,7 @@ public class Test_vsDATA_ZE {
 
         }
 
-        switch (main_menu){
+        switch (main_menu) {
             case "HOME":
                 HOME_MenusZHTs = MenusZHTs_temp;
                 HOME_MenusENGs = MenusENGs_temp;
@@ -441,7 +440,7 @@ public class Test_vsDATA_ZE {
             log_message(this.getClass().getName(), "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
             log_message(this.getClass().getName(), "^          All Matched!          ^");
             log_message(this.getClass().getName(), "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-        }else{
+        } else {
             // [ZHT] version missing
             for (String MenusMissZHT : MenusMiss_ZHT) {
                 log_message(this.getClass().getName(), "[ZHT] version missing: " + MenusMissZHT);
