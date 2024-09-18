@@ -3,18 +3,13 @@ package com.demo.apitest;
 import java.io.File;
 
 public class Data_JPN {
-
-    // Git gogogo !!!!!!!!!!!!!!
-    // Git gogogo !!!!!!!!!!!!!!
-    // Git gogogo !!!!!!!!!!!!!!
-
     // Check list
     public static int check_list = 1;
 
     // Box info
     public static String baseUrl = "https://10.103.50.101"; // TZ 270W
 //    public static String baseUrl = "https://10.103.50.153"; // TZ 470
-//    public static String baseUrl = "https://10.8.162.156"; // NSA 2700
+//    public static String baseUrl = "https://10.8.162.178"; // NSA 2700
 
     // ChromeDriver Settings
     public static File my_path = new File(System.getProperty("user.dir"));
