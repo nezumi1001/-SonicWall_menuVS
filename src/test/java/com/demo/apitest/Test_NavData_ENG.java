@@ -31,9 +31,13 @@ public class Test_NavData_ENG {
         chromOptions.addArguments("--lang=en-US");
         chromOptions.addArguments("--incognito");
         chromOptions.addArguments("--ignore-certificate-errors");
-//		chromOptions.addArguments("window-size=1920, 1080");
-        chromOptions.addArguments("window-size=1920, 3000");
+
+        // [S]Set browser to headless
         chromOptions.addArguments("--headless");
+
+        // [S]Set browser zoom > 20%
+        chromOptions.addArguments("--force-device-scale-factor=0.2");
+
         driver = new ChromeDriver(chromOptions);
         driver.get(Data_ENG.baseUrl);
         mf = new Func_ENG(driver);

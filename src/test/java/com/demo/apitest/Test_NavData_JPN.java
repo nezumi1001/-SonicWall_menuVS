@@ -28,8 +28,13 @@ public class Test_NavData_JPN {
         chromOptions.addArguments("--lang=ja-JP");
         chromOptions.addArguments("--incognito");
         chromOptions.addArguments("--ignore-certificate-errors");
-        chromOptions.addArguments("window-size=1920, 3000");
+
+        // [S]Set browser to headless
         chromOptions.addArguments("--headless");
+
+        // [S]Set browser zoom > 20%
+        chromOptions.addArguments("--force-device-scale-factor=0.2");
+
         driver = new ChromeDriver(chromOptions);
         driver.get(Data_JPN.baseUrl);
         mf = new Func_JPN(driver);
@@ -123,9 +128,8 @@ public class Test_NavData_JPN {
         // [A]Get Box info
         box_info();
 
-        // [A]Get self-check (JJ check) info
-//        System.out.println("Data_JPN.check_list: " + Data_JPN.check_list);
         if (Data_JPN.check_list == 1) {
+            mf.log_message(this.getClass().getName(), "Running 'Contemporary Mode'...");
             if (mf.newMenu_JPN == 0) {
                 mf.log_message(this.getClass().getName(), "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
                 mf.log_message(this.getClass().getName(), "^          All Matched!          ^");

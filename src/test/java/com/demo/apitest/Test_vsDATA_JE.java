@@ -405,9 +405,7 @@ public class Test_vsDATA_JE {
         String[][] Menus_ENGs = box_ENG();
 
         // [L]Log
-        log_message(this.getClass().getName(), "Ready to start...");
-
-        // [L]Log
+        log_message(this.getClass().getName(), "Running 'Contemporary Mode'...");
         log_message(this.getClass().getName(), "--------------------------------------------------------------------");
 
         // [L]Log (info JPN)
