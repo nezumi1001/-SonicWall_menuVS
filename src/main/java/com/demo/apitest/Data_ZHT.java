@@ -20,6 +20,10 @@ public class Data_ZHT {
     // Preempt
     public static String preempt_path = "//button[contains(text(),'非設定')]";
 
+    // Classic Mode
+    public static String AD_path = "//span[@class='sw-avatar__initials']";
+    public static String old_path = "//div[@class='sw-toggle sw-toggle--left sw-toggle--compact sw-toggle--light fw-app-header__view-toggle sw-flexbox__flex-none']";
+
     // Username field
     public static String userName_path = "//input[contains(@placeholder,'輸入您的使用者名稱')]";
     public static String login_name = "admin";
@@ -41,15 +45,6 @@ public class Data_ZHT {
     public static String CurrentFirmwareVersion = "//div[@class='sw-table-row__cell__wrapper sw-flexbox__flex sw-flexbox sw-flexbox--center-items']/div/div/div/span[1]";
     public static String FirmwareVersion = "//div[@class='sw-table-row__cell__wrapper sw-flexbox__flex sw-flexbox sw-flexbox--center-items']/div/div/div[2]";
 
-    // Top menu URL
-    public static String[][] Menu_url = {
-            {"HOME", baseUrl + "/sonicui/7/m/dashboard/overview/status/device"},
-            {"MONITOR", baseUrl + "/sonicui/7/m/mgmt/system/real-time-monitor-ng"}, // 7.1.1
-            {"DEVICE", baseUrl + "/sonicui/7/m/mgmt/system/license-enhanced"},
-            {"NETWORK", baseUrl + "/sonicui/7/m/mgmt/network/interfaces"},
-            {"OBJECT", baseUrl + "/sonicui/7/m/mgmt/objects/zones"},
-            {"POLICY", baseUrl + "/sonicui/7/m/mgmt/policies/ngpe-access-rules"}};
-
     // Left
     public static String LeftPane_path = "//div[@class='sw-nav-item__content sw-flexbox sw-flexbox--center-items sw-flexbox__flex']/span";
     // Dark
@@ -58,6 +53,14 @@ public class Data_ZHT {
     public static String SubMenu_nested = "//ul[@class='sw-nav-group__items sw-nav-group__items--nested-level-0']//div[@class='sw-nav-item__content sw-flexbox sw-flexbox--center-items sw-flexbox__flex']/span";
 
     // ===================================================================================================================================================================================
+    // leftPane_ALL
+    public static String[][] leftPane_ALL = {
+            // ==============================================
+            // ==============================================
+            // ==============================================
+
+    };
+
     // HOME
     public static String[][] leftPane_HOME = {
             {"儀表板", "Dashboard"},

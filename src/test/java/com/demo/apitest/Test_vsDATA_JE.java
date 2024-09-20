@@ -67,48 +67,26 @@ public class Test_vsDATA_JE {
     }
 
     // box_JPN
-    public String[][] box_JPN() throws IOException {
-        List<String> menu_HOME = new ArrayList<>();
-        List<String> menu_MONITOR = new ArrayList<>();
-        List<String> menu_DEVICE = new ArrayList<>();
-        List<String> menu_NETWORK = new ArrayList<>();
-        List<String> menu_OBJECT = new ArrayList<>();
-        List<String> menu_POLICY = new ArrayList<>();
+    public String[] box_JPN() throws IOException {
+        List<String> menu_ALL = new ArrayList<>();
         // Import data JPN
         FileInputStream fs_JPN = new FileInputStream(my_path + "\\src\\main\\resources\\Data\\compare\\Box_JPN.xls");
         HSSFWorkbook workbook_JPN = new HSSFWorkbook(fs_JPN);
         HSSFSheet sheet = workbook_JPN.getSheet("JPN");
         // Get data JPN
-        for (int data_column = 0; data_column < sheet.getRow(data_column).getLastCellNum(); data_column++) {
-            for (int data_row = 0; data_row <= sheet.getLastRowNum(); data_row++) {
-                HSSFCell data_value = sheet.getRow(data_row).getCell(data_column);
-                // Go on to new column when arriving at the last row
-                if (data_value == null) {
-                    continue;
-                }
-                String dataValue = data_value.getStringCellValue();
-
-                switch (data_column) {
-                    case 0 -> menu_HOME.add(dataValue);
-                    case 1 -> menu_MONITOR.add(dataValue);
-                    case 2 -> menu_DEVICE.add(dataValue);
-                    case 3 -> menu_NETWORK.add(dataValue);
-                    case 4 -> menu_OBJECT.add(dataValue);
-                    case 5 -> menu_POLICY.add(dataValue);
-                }
-
+        for (int data_row = 0; data_row <= sheet.getLastRowNum(); data_row++) {
+            HSSFCell data_value = sheet.getRow(data_row).getCell(0);
+            // Go on to new column when arriving at the last row
+            if (data_value == null) {
+                continue;
             }
+            String dataValue = data_value.getStringCellValue();
+            menu_ALL.add(dataValue);
         }
 
         // Merge data JPN
         // List<String> >> String[]
-        String[] menu_HOMEs = menu_HOME.toArray(new String[0]);
-        String[] menu_MONITORs = menu_MONITOR.toArray(new String[0]);
-        String[] menu_DEVICEs = menu_DEVICE.toArray(new String[0]);
-        String[] menu_NETWORKs = menu_NETWORK.toArray(new String[0]);
-        String[] menu_OBJECTs = menu_OBJECT.toArray(new String[0]);
-        String[] menu_POLICYs = menu_POLICY.toArray(new String[0]);
-        String[][] menu_JPN = {menu_HOMEs, menu_MONITORs, menu_DEVICEs, menu_NETWORKs, menu_OBJECTs, menu_POLICYs};
+        String[] menu_JPN = menu_ALL.toArray(new String[0]);
         // [L]Log
         log_message(this.getClass().getName(), "Got data!");
         workbook_JPN.close();
@@ -116,48 +94,26 @@ public class Test_vsDATA_JE {
     }
 
     // box_ENG
-    public String[][] box_ENG() throws IOException {
-        List<String> menu_HOME = new ArrayList<>();
-        List<String> menu_MONITOR = new ArrayList<>();
-        List<String> menu_DEVICE = new ArrayList<>();
-        List<String> menu_NETWORK = new ArrayList<>();
-        List<String> menu_OBJECT = new ArrayList<>();
-        List<String> menu_POLICY = new ArrayList<>();
+    public String[] box_ENG() throws IOException {
+        List<String> menu_ALL = new ArrayList<>();
         // Import data ENG
         FileInputStream fs_ENG = new FileInputStream(my_path + "\\src\\main\\resources\\Data\\compare\\Box_ENG.xls");
         HSSFWorkbook workbook_ENG = new HSSFWorkbook(fs_ENG);
         HSSFSheet sheet = workbook_ENG.getSheet("ENG");
         // Get data ENG
-        for (int data_column = 0; data_column < sheet.getRow(data_column).getLastCellNum(); data_column++) {
-            for (int data_row = 0; data_row <= sheet.getLastRowNum(); data_row++) {
-                HSSFCell data_value = sheet.getRow(data_row).getCell(data_column);
-                // Go on to new column when arriving at the last row
-                if (data_value == null) {
-                    continue;
-                }
-                String dataValue = data_value.getStringCellValue();
-
-                switch (data_column) {
-                    case 0 -> menu_HOME.add(dataValue);
-                    case 1 -> menu_MONITOR.add(dataValue);
-                    case 2 -> menu_DEVICE.add(dataValue);
-                    case 3 -> menu_NETWORK.add(dataValue);
-                    case 4 -> menu_OBJECT.add(dataValue);
-                    case 5 -> menu_POLICY.add(dataValue);
-                }
-
+        for (int data_row = 0; data_row <= sheet.getLastRowNum(); data_row++) {
+            HSSFCell data_value = sheet.getRow(data_row).getCell(0);
+            // Go on to new column when arriving at the last row
+            if (data_value == null) {
+                continue;
             }
+            String dataValue = data_value.getStringCellValue();
+            menu_ALL.add(dataValue);
         }
 
         // Merge data JPN
         // List<String> >> String[]
-        String[] menu_HOMEs = menu_HOME.toArray(new String[0]);
-        String[] menu_MONITORs = menu_MONITOR.toArray(new String[0]);
-        String[] menu_DEVICEs = menu_DEVICE.toArray(new String[0]);
-        String[] menu_NETWORKs = menu_NETWORK.toArray(new String[0]);
-        String[] menu_OBJECTs = menu_OBJECT.toArray(new String[0]);
-        String[] menu_POLICYs = menu_POLICY.toArray(new String[0]);
-        String[][] menu_ENG = {menu_HOMEs, menu_MONITORs, menu_DEVICEs, menu_NETWORKs, menu_OBJECTs, menu_POLICYs};
+        String[] menu_ENG = menu_ALL.toArray(new String[0]);
         // [L]Log
         log_message(this.getClass().getName(), "Got data!");
         workbook_ENG.close();
@@ -165,45 +121,23 @@ public class Test_vsDATA_JE {
     }
 
     // Get missing page
-    public int missing_page(int column_no, List<String> MenusJPNs, List<String> MenusENGs) {
-        // Column name
-        String[] column_name = {"HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY"};
+    public int missing_page(List<String> MenusJPNs, List<String> MenusENGs) {
         // New menu JPN
-        List<String> HOME_MenusJPNs = new ArrayList<>();
-        List<String> MONITOR_MenusJPNs = new ArrayList<>();
-        List<String> DEVICE_MenusJPNs = new ArrayList<>();
-        List<String> NETWORK_MenusJPNs = new ArrayList<>();
-        List<String> OBJECT_MenusJPNs = new ArrayList<>();
-        List<String> POLICY_MenusJPNs = new ArrayList<>();
+        List<String> MenusJPNs_ALL = new ArrayList<>();
 
         // New menu ENG
-        List<String> HOME_MenusENGs = new ArrayList<>();
-        List<String> MONITOR_MenusENGs = new ArrayList<>();
-        List<String> DEVICE_MenusENGs = new ArrayList<>();
-        List<String> NETWORK_MenusENGs = new ArrayList<>();
-        List<String> OBJECT_MenusENGs = new ArrayList<>();
-        List<String> POLICY_MenusENGs = new ArrayList<>();
+        List<String> MenusENGs_ALL = new ArrayList<>();
 
         // Parent menu for each column
-        // HOME ENGJPN
-        String[] HOME_Menus_ENGJPN = {"Dashboard", "Legal Information", "API"};
-        // MONITOR ENGJPN
-        String[] MONITOR_Menus_ENGJPN = {"Real-Time Charts", "AppFlow", "SDWAN", "Logs", "Tools & Monitors"};
-        // DEVICE ENGJPN
-        String[] DEVICE_Menus_ENGJPN = {"Settings (TOP)", "Internal Wireless", "High Availability", "Users", "AppFlow",
-                "Network Access Control", "Log", "Diagnostics", "Switch Network", "Access Points", "WWAN"};
-        // NETWORK ENGJPN
-        String[] NETWORK_Menus_ENGJPN = {"System", "Firewall", "VoIP", "DNS", "Switching", "SDWAN", "Cloud Secure Edge", "IPSec VPN",
-                "SSL VPN"};
-        // OBJECT ENGJPN
-        String[] OBJECT_Menus_ENGJPN = {"Match Objects (TOP)", "Profile Objects", "Action Objects", "Signatures"};
-        // POLICY ENGJPN
-        String[] POLICY_Menus_ENGJPN = {"Rules and Policies", "DPI-SSL", "DPI-SSH", "Security Services", "Anti-Spam",
-                "Capture ATP", "DNS Security", "Endpoint Security"};
-        // ------------------------------------------------------------------------------------------------------------------------------
-        // --- Make new menu ---
-        String main_menu = column_name[column_no];
+        // ALL ENGJPN
+        String[] Menus_ENGJPN = {
+                "Dashboard", "Monitor (TOP)", "System", "Diagnostics", "Network", "Switching", "SD-WAN",
+                "Cloud Secure Edge", "Switch Network", "Internal Wireless", "Access Points", "WWAN", "Firewall", "Firewall Settings",
+                "DPI-SSL", "DPI-SSH", "Capture ATP", "VoIP", "Anti-Spam", "VPN", "SSL VPN",
+                "Users", "High Availability", "Security Services", "DNS Security", "AppFlow", "Network Access Control", "Log"
+        };
 
+        // ------------------------------------------------------------------------------------------------------------------------------
         // Mark ">" JPN
         List<String> MenusJPNs_temp = new ArrayList<>();
         for (int i = 0; i < MenusJPNs.size(); i++) {
@@ -212,14 +146,7 @@ public class Test_vsDATA_JE {
             int iTemp = i;
             int iMenu = 0;
 
-            switch (main_menu) {
-                case "HOME" -> MenusJPN_box = HOME_Menus_ENGJPN;
-                case "MONITOR" -> MenusJPN_box = MONITOR_Menus_ENGJPN;
-                case "DEVICE" -> MenusJPN_box = DEVICE_Menus_ENGJPN;
-                case "NETWORK" -> MenusJPN_box = NETWORK_Menus_ENGJPN;
-                case "OBJECT" -> MenusJPN_box = OBJECT_Menus_ENGJPN;
-                case "POLICY" -> MenusJPN_box = POLICY_Menus_ENGJPN;
-            }
+            MenusJPN_box = Menus_ENGJPN;
 
             // Find parent menu, yes >> end loop, no >> sub-menu (index - 1) continue to find parent menu
             while (iMenu == 0) {
@@ -254,18 +181,7 @@ public class Test_vsDATA_JE {
             int iTemp = i;
             int iMenu = 0;
 
-            if (main_menu.equals("HOME"))
-                MenusENG_box = HOME_Menus_ENGJPN;
-            if (main_menu.equals("MONITOR"))
-                MenusENG_box = MONITOR_Menus_ENGJPN;
-            if (main_menu.equals("DEVICE"))
-                MenusENG_box = DEVICE_Menus_ENGJPN;
-            if (main_menu.equals("NETWORK"))
-                MenusENG_box = NETWORK_Menus_ENGJPN;
-            if (main_menu.equals("OBJECT"))
-                MenusENG_box = OBJECT_Menus_ENGJPN;
-            if (main_menu.equals("POLICY"))
-                MenusENG_box = POLICY_Menus_ENGJPN;
+            MenusENG_box = Menus_ENGJPN;
 
             // Find parent menu, yes >> end loop, no >> sub-menu (index - 1) continue to find parent menu
             while (iMenu == 0) {
@@ -292,79 +208,37 @@ public class Test_vsDATA_JE {
 
         }
 
-        switch (main_menu) {
-            case "HOME":
-                HOME_MenusJPNs = MenusJPNs_temp;
-                HOME_MenusENGs = MenusENGs_temp;
-                break;
-            case "MONITOR":
-                MONITOR_MenusJPNs = MenusJPNs_temp;
-                MONITOR_MenusENGs = MenusENGs_temp;
-                break;
-            case "DEVICE":
-                DEVICE_MenusJPNs = MenusJPNs_temp;
-                DEVICE_MenusENGs = MenusENGs_temp;
-                break;
-            case "NETWORK":
-                NETWORK_MenusJPNs = MenusJPNs_temp;
-                NETWORK_MenusENGs = MenusENGs_temp;
-                break;
-            case "OBJECT":
-                OBJECT_MenusJPNs = MenusJPNs_temp;
-                OBJECT_MenusENGs = MenusENGs_temp;
-                break;
-            case "POLICY":
-                POLICY_MenusJPNs = MenusJPNs_temp;
-                POLICY_MenusENGs = MenusENGs_temp;
-                break;
-        }
+        MenusJPNs_ALL = MenusJPNs_temp;
+        MenusENGs_ALL = MenusENGs_temp;
 
         // --- Final VS ---
         // Merge data JPN
-        String[] HOME_JPNs = HOME_MenusJPNs.toArray(new String[0]);
-        String[] MONITOR_JPNs = MONITOR_MenusJPNs.toArray(new String[0]);
-        String[] DEVICE_JPNs = DEVICE_MenusJPNs.toArray(new String[0]);
-        String[] NETWORK_JPNs = NETWORK_MenusJPNs.toArray(new String[0]);
-        String[] OBJECT_JPNs = OBJECT_MenusJPNs.toArray(new String[0]);
-        String[] POLICY_JPNs = POLICY_MenusJPNs.toArray(new String[0]);
-        String[][] Menu_JPNs = {HOME_JPNs, MONITOR_JPNs, DEVICE_JPNs, NETWORK_JPNs, OBJECT_JPNs, POLICY_JPNs};
+        String[] Menu_JPNs = MenusJPNs_ALL.toArray(new String[0]);
 
         // Merge data ENG
-        String[] HOME_ENGs = HOME_MenusENGs.toArray(new String[0]);
-        String[] MONITOR_ENGs = MONITOR_MenusENGs.toArray(new String[0]);
-        String[] DEVICE_ENGs = DEVICE_MenusENGs.toArray(new String[0]);
-        String[] NETWORK_ENGs = NETWORK_MenusENGs.toArray(new String[0]);
-        String[] OBJECT_ENGs = OBJECT_MenusENGs.toArray(new String[0]);
-        String[] POLICY_ENGs = POLICY_MenusENGs.toArray(new String[0]);
-        String[][] Menu_ENGs = {HOME_ENGs, MONITOR_ENGs, DEVICE_ENGs, NETWORK_ENGs, OBJECT_ENGs, POLICY_ENGs};
+        String[] Menu_ENGs = MenusENGs_ALL.toArray(new String[0]);
 
         // JPN version missing
-        for (int i = 0; i < 6; i++) {
-            List<String> MenuJPNs = Arrays.asList(Menu_JPNs[i]);
-            String[] MenuENGs = Menu_ENGs[i];
-            for (String MenuENG : MenuENGs) {
-                if (!MenuJPNs.contains(MenuENG)) {
-                    if (MenuENG.contains(" (TOP)")) {
-                        MenuENG = MenuENG.replace(" (TOP)", "");
-                    }
-                    MenusMiss_JPN.add(main_menu + " > " + MenuENG);
-                    match++;
+        List<String> MenuJPNs = Arrays.asList(Menu_JPNs);
+        for (String MenuENG : Menu_ENGs) {
+            if (!MenuJPNs.contains(MenuENG)) {
+                if (MenuENG.contains(" (TOP)")) {
+                    MenuENG = MenuENG.replace(" (TOP)", "");
                 }
+                MenusMiss_JPN.add(MenuENG);
+                match++;
             }
         }
 
         // ENG version missing
-        for (int i = 0; i < 6; i++) {
-            List<String> MenuENGs = Arrays.asList(Menu_ENGs[i]);
-            String[] MenuJPNs = Menu_JPNs[i];
-            for (String MenuJPN : MenuJPNs) {
-                if (!MenuENGs.contains(MenuJPN)) {
-                    if (MenuJPN.contains(" (TOP)")) {
-                        MenuJPN = MenuJPN.replace(" (TOP)", "");
-                    }
-                    MenusMiss_ENG.add(main_menu + " > " + MenuJPN);
-                    match++;
+        List<String> MenuENGs = Arrays.asList(Menu_ENGs);
+        for (String MenuJPN : Menu_JPNs) {
+            if (!MenuENGs.contains(MenuJPN)) {
+                if (MenuJPN.contains(" (TOP)")) {
+                    MenuJPN = MenuJPN.replace(" (TOP)", "");
                 }
+                MenusMiss_ENG.add(MenuJPN);
+                match++;
             }
         }
 
@@ -397,17 +271,13 @@ public class Test_vsDATA_JE {
 
         // Get data JPN & ENG
         /*{
-            {"Dashboard", "System", "Access Points", "Capture ATP", "Topology", "Legal Information", "API"},
-            {"aa", "bb"...},
-            ...
+            {"Dashboard", "System", "Access Points", "Capture ATP", "Topology", "Legal Information", "API", ...},
         }*/
-        String[][] Menus_JPNs = box_JPN();
-        String[][] Menus_ENGs = box_ENG();
+        String[] Menus_JPNs = box_JPN();
+        String[] Menus_ENGs = box_ENG();
 
         // [L]Log
-        log_message(this.getClass().getName(), "Ready to start...");
-
-        // [L]Log
+        log_message(this.getClass().getName(), "Running 'Classic Mode'...");
         log_message(this.getClass().getName(), "--------------------------------------------------------------------");
 
         // [L]Log (info JPN)
@@ -430,11 +300,9 @@ public class Test_vsDATA_JE {
 
         // Compare data JPN & ENG
         // String[] >> List<String>
-        for (int i = 0; i < 6; i++) {
-            List<String> MenusJPNs = Arrays.asList(Menus_JPNs[i]);
-            List<String> MenusENGs = Arrays.asList(Menus_ENGs[i]);
-            match = missing_page(i, MenusJPNs, MenusENGs);
-        }
+        List<String> MenusJPNs = Arrays.asList(Menus_JPNs);
+        List<String> MenusENGs = Arrays.asList(Menus_ENGs);
+        match = missing_page(MenusJPNs, MenusENGs);
         // All match or not
         if (match == 0) {
             log_message(this.getClass().getName(), "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");

@@ -1,5 +1,19 @@
 package com.demo.apitest;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,26 +25,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
-
-import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
-
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class Func_ENG {
     private final WebDriver driver;
@@ -157,32 +151,23 @@ public class Func_ENG {
     }
 
     // Expand menu
-    public List<String> expand_menu(List<WebElement> expand_Menus, String top_menu) {
+    public List<String> expand_menu(List<WebElement> expand_Menus) {
         List<String> actual_data = new ArrayList<>();
 
         // Add menu ENG
         for (WebElement expand_Menu_text : expand_Menus) {
             actual_data.add(expand_Menu_text.getText());
-            log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + expand_Menu_text.getText());
+            log_message(this.getClass().getName(), " Menu: " + expand_Menu_text.getText());
         }
 
-        // --- Change duplicated menu >> xx (TOP) ---
+        // --- Fix duplicated menu >> xx (TOP) ---
         log_message(this.getClass().getName(), "========================================================================");
-        if (top_menu.equals("DEVICE") || top_menu.equals("OBJECT")) {
-            for (int j = 0; j < actual_data.size(); j++) {
-                // "DEVICE > Settings" >> "DEVICE > Settings (TOP)"
-                if (actual_data.get(j).equals("Settings") && actual_data.get(j + 1).equals("Licenses")) {
-                    actual_data.set(j, "Settings (TOP)");
-                    log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + "Settings >> Settings (TOP)");
-                }
-                // "Object > Match Objects" >> "Object > Match Objects (TOP)"
-                if (actual_data.get(j).equals("Match Objects") && actual_data.get(j + 1).equals("Zones")) {
-                    actual_data.set(j, "Match Objects (TOP)");
-                    log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + "Match Objects >> Match Objects (TOP)");
-                }
+        for (int j = 0; j < actual_data.size(); j++) {
+            // "Monitor >> Monitor_01"
+            if (actual_data.get(j).equals("Monitor") && actual_data.get(j + 1).equals("Real-Time Monitor")) {
+                actual_data.set(j, "Monitor (TOP)");
+                log_message(this.getClass().getName(), " Menu: " + "Monitor >> Monitor (TOP)");
             }
-        } else {
-            log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + "No duplicated data to the TOP");
         }
 
         // [T] Sub menu text
@@ -251,7 +236,7 @@ public class Func_ENG {
         HSSFWorkbook workbook = new HSSFWorkbook();
         HSSFSheet sheet = workbook.createSheet("ENG");
         // Create 100 row
-        for (int new_row = 0; new_row < 100; new_row++) {
+        for (int new_row = 0; new_row < 300; new_row++) {
             sheet.createRow(new_row);
         }
         // Create .\\Data\\compare folder if not exists
@@ -272,7 +257,7 @@ public class Func_ENG {
     }
 
     // Update data (menu)
-    public void update_data(List<String> MENU_list, int menu_column) throws IOException {
+    public void update_data(List<String> MENU_list) throws IOException {
 //        FileInputStream fs = new FileInputStream(my_path + "\\src\\main\\resources\\Data\\compare\\Box_ENG.xls");
         FileInputStream fs = new FileInputStream(my_path + CREATE_DATA_STREAM);
 
@@ -282,7 +267,7 @@ public class Func_ENG {
         // Input data
         for (int i = 0; i < MENU_list.size(); i++) {
             row = sheet.getRow(i);
-            row.createCell(menu_column).setCellValue(MENU_list.get(i));
+            row.createCell(0).setCellValue(MENU_list.get(i));
         }
         // Auto column
         for (int auto_column = 0; auto_column < Objects.requireNonNull(row).getLastCellNum(); auto_column++) {

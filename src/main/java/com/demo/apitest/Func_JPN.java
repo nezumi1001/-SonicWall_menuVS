@@ -1,5 +1,17 @@
 package com.demo.apitest;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.poi.hssf.usermodel.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,29 +23,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
-
-import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.poi.hssf.usermodel.HSSFCell;
-import org.apache.poi.hssf.usermodel.HSSFCellStyle;
-import org.apache.poi.hssf.usermodel.HSSFFont;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
-
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class Func_JPN {
     public int newMenu_JPN = 0;
@@ -140,32 +129,45 @@ public class Func_JPN {
     }
 
     // Expand menu
-    public List<String> expand_menu(List<WebElement> expand_Menus, String top_menu) {
+    public List<String> expand_menu(List<WebElement> expand_Menus) {
         List<String> actual_data = new ArrayList<>();
+        int High_Availability = 0;
+        int High_Availability_count = 0;
 
         // Switch menu JPN > ENG
         for (WebElement expand_Menu_text : expand_Menus) {
-            actual_data.add(switch_menu(expand_Menu_text.getText(), top_menu));
+            // Fix duplicated sub-menu
+            if (Data_JPN.check_list == 0) {
+                if (expand_Menu_text.getText().equals("高可用性")) {
+                    High_Availability = 1;
+                }
+                if (High_Availability == 1) {
+                    High_Availability_count++;
+                }
+            }
+
+            // 高可用性 > 監視 >> 高可用性_監視
+            if (High_Availability_count == 5) {
+                if (expand_Menu_text.getText().equals("監視")) {
+                    actual_data.add(switch_menu("高可用性_監視"));
+                    log_message(this.getClass().getName(), " Sub-menu: " + "高可用性 > 監視 >> 高可用性_監視");
+                }
+                High_Availability = 0;
+                High_Availability_count = 0;
+            } else {
+                actual_data.add(switch_menu(expand_Menu_text.getText()));
+            }
         }
 
-        // --- Change duplicated menu >> xx (TOP) ---
+        // --- Fix duplicated menu >> xx (TOP) ---
         if (Data_JPN.check_list == 0) {
             log_message(this.getClass().getName(), "========================================================================");
-            if (top_menu.equals("DEVICE") || top_menu.equals("OBJECT")) {
-                for (int j = 0; j < actual_data.size(); j++) {
-                    // "DEVICE > Settings" >> "DEVICE > Settings (TOP)"
-                    if (actual_data.get(j).equals("Settings") && actual_data.get(j + 1).equals("Licenses")) {
-                        actual_data.set(j, "Settings (TOP)");
-                        log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + "Settings >> Settings (TOP)");
-                    }
-                    // "Object > Match Objects" >> "Object > Match Objects (TOP)"
-                    if (actual_data.get(j).equals("Match Objects") && actual_data.get(j + 1).equals("Zones")) {
-                        actual_data.set(j, "Match Objects (TOP)");
-                        log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + "Match Objects >> Match Objects (TOP)");
-                    }
+            for (int j = 0; j < actual_data.size(); j++) {
+                // "監視 >> 監視 (TOP)"
+                if (actual_data.get(j).equals("Monitor") && actual_data.get(j + 1).equals("Real-Time Monitor")) {
+                    actual_data.set(j, "Monitor (TOP)");
+                    log_message(this.getClass().getName(), " Menu: " + "Monitor >> Monitor (TOP)");
                 }
-            } else {
-                log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + "No duplicated data to the TOP");
             }
         }
 
@@ -224,7 +226,7 @@ public class Func_JPN {
         HSSFWorkbook workbook = new HSSFWorkbook();
         HSSFSheet sheet = workbook.createSheet("JPN");
         // Create 100 row
-        for (int new_row = 0; new_row < 100; new_row++) {
+        for (int new_row = 0; new_row < 300; new_row++) {
             sheet.createRow(new_row);
         }
         // Create .\\Data\\compare folder if not exists
@@ -241,7 +243,7 @@ public class Func_JPN {
     }
 
     // Update data (menu)
-    public void update_data(List<String> MENU_list, int menu_column) throws IOException {
+    public void update_data(List<String> MENU_list) throws IOException {
         FileInputStream fs = new FileInputStream(my_path + CREATE_DATA_STREAM);
         HSSFWorkbook workbook = new HSSFWorkbook(fs);
         HSSFSheet sheet = workbook.getSheet("JPN");
@@ -253,7 +255,7 @@ public class Func_JPN {
         // Input data
         for (int i = 0; i < MENU_list.size(); i++) {
             row = sheet.getRow(i);
-            cell = row.createCell(menu_column);
+            cell = row.createCell(0);
 
             // Set (NEW) menus in RED color
             if (MENU_list.get(i).contains("NEW")) {
@@ -276,18 +278,11 @@ public class Func_JPN {
     }
 
     // VS menu
-    public String switch_menu(String text_JPN, String top_menu) {
+    public String switch_menu(String text_JPN) {
         String text_update = null;
         String[][] leftPane = null;
 
-        switch (top_menu) {
-            case "HOME" -> leftPane = Data_JPN.leftPane_HOME;
-            case "MONITOR" -> leftPane = Data_JPN.leftPane_MONITOR;
-            case "DEVICE" -> leftPane = Data_JPN.leftPane_DEVICE;
-            case "NETWORK" -> leftPane = Data_JPN.leftPane_NETWORK;
-            case "OBJECT" -> leftPane = Data_JPN.leftPane_OBJECT;
-            case "POLICY" -> leftPane = Data_JPN.leftPane_POLICY;
-        }
+        leftPane = Data_JPN.leftPane_ALL;
 
         // Check list for JPN > JPN
         if (Data_JPN.check_list == 1) {
@@ -303,9 +298,9 @@ public class Func_JPN {
             if (i >= leftPane.length) {
                 text_update = "(NEW) " + text_JPN;
                 newMenu_JPN += 1;
-                menuInfo_JPN.add("'" + top_menu + "'" + " Menu: " + text_update);
+                menuInfo_JPN.add("Menu: " + text_update);
             }
-            log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + text_update);
+            log_message(this.getClass().getName(), " Menu: " + text_update);
         }
 
         // Check list for JPN > ENG
@@ -316,7 +311,7 @@ public class Func_JPN {
                     break;
                 }
             }
-            log_message(this.getClass().getName(), "'" + top_menu + "'" + " Menu: " + text_JPN + " >> " + text_update);
+            log_message(this.getClass().getName(), " Menu: " + text_JPN + " >> " + text_update);
         }
 
         return text_update;

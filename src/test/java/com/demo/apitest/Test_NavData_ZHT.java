@@ -1,9 +1,5 @@
 package com.demo.apitest;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +9,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Test_NavData_ZHT {
     private Func_ZHT mf;
@@ -61,22 +61,19 @@ public class Test_NavData_ZHT {
     }
 
     // Actual data
-    public List<String> actual_data(String top_menu) {
-        // [A]Page redirect
-        for (int i = 0; i < Data_ZHT.Menu_url.length; i++) {
-            if (Data_ZHT.Menu_url[i][0].equals(top_menu)) {
-                driver.get(Data_ZHT.Menu_url[i][1]);
-            }
-        }
-
+    public List<String> actual_data() {
         // [A]Expand page
         mf.wait_element("xpath", Data_ZHT.DarkMenu_LeftPane_path, "DarkMenu_LeftPane");
         List<WebElement> Menu_darks = mf.find_elements("xpath", Data_ZHT.DarkMenu_LeftPane_path, "Dark menu on leftpane");
-        for (WebElement Menu_dark : Menu_darks)
-            mf.js_click(Menu_dark);
+
+        for (int i = 1; i <= Menu_darks.size(); i++) {
+            WebElement e = Menu_darks.get(Menu_darks.size() - i);
+            mf.js_click(e);
+        }
+
         mf.wait_element("xpath", Data_ZHT.SubMenu_nested, "SubMenu_nested");
         List<WebElement> Menu_alls = mf.find_elements("xpath", Data_ZHT.LeftPane_path, "All menu on leftpane");
-        return new ArrayList<>(mf.expand_menu(Menu_alls, top_menu));
+        return new ArrayList<>(mf.expand_menu(Menu_alls));
     }
 
     @Test
@@ -90,8 +87,8 @@ public class Test_NavData_ZHT {
         mf.log_message(this.getClass().getName(), "Login to main page...");
         // [A]Preempt
         if (mf.wait_element("xpath", Data_ZHT.preempt_path, "Ready to login...") != null) {
-            mf.js_click(mf.wait_element("xpath", Data_ZHT.preempt_path, "preempt"));
-            mf.log_message(this.getClass().getName(), "Preempt the box...");
+            mf.js_click(mf.wait_element("xpath", Data_ZHT.preempt_path, "Non-Config button"));
+            mf.log_message(this.getClass().getName(), "Enter in Non-Config Mode...");
             Preempt = 1;
         }
     }
@@ -99,26 +96,27 @@ public class Test_NavData_ZHT {
     @Test
     public void test_Step02_MenuTop_ZHT() throws Exception {
         List<String> actualData;
-        String[] topMenus = { "HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY" };
         // [A]Switch to "Non-Config" mode
         if (Preempt == 0) {
             mf.js_click(mf.wait_element("xpath", Data_ZHT.Config_path, "Config"));
             mf.log_message(this.getClass().getName(), "Switch to 'Non-Config' mode...");
         }
 
+        // [A]Switch to Classic Mode
+        mf.js_click(mf.wait_element("xpath", Data_ZHT.AD_path, "AD icon"));
+        mf.js_click(mf.wait_element("xpath", Data_ZHT.old_path, "Classic option"));
+
         // [D]Create data >> Excel
         mf.create_data();
         mf.log_message(this.getClass().getName(), "Data created for [ZHT]!");
 
-        // [A]Access top menu
-        for (int i = 0; i < topMenus.length; i++) {
-            // [A]Click (e.g. "HOME")
-            actualData = actual_data(topMenus[i]);
-            // [D]Update data >> Excel
-            mf.update_data(actualData, i);
-            mf.log_message(this.getClass().getName(), "Data updated for [ZHT]!");
-            mf.log_message(this.getClass().getName(), "Top menu " + "'" + topMenus[i] + "'" + " is done!");
-        }
+        // [A]Access menu
+        actualData = actual_data();
+
+        // [D]Update data >> Excel
+        mf.update_data(actualData);
+        mf.log_message(this.getClass().getName(), "Data updated for [ZHT]!");
+
         // [A]Get Box info
         box_info();
 
