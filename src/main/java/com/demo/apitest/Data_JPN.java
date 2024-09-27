@@ -8,7 +8,6 @@ public class Data_JPN {
 
     // Box info
 //    public static String baseUrl = "https://10.103.50.65"; // TZ 270W
-//    public static String baseUrl = "https://10.103.50.153"; // TZ 470
     public static String baseUrl = "https://10.8.162.154"; // NSA 2700
 
     // ChromeDriver Settings

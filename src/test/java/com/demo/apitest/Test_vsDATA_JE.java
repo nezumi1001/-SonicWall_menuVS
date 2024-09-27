@@ -25,8 +25,8 @@ public class Test_vsDATA_JE {
     private int match = 0;
     private ExtentReports exReport;
     private ExtentTest exTest;
-    private List<String> MenusMiss_JPN = new ArrayList<>();
-    private List<String> MenusMiss_ENG = new ArrayList<>();
+    private final List<String> MenusMiss_JPN = new ArrayList<>();
+    private final List<String> MenusMiss_ENG = new ArrayList<>();
 
     // Import data only (info JPN)
     public List<String> info_JPN() throws IOException {
@@ -123,10 +123,10 @@ public class Test_vsDATA_JE {
     // Get missing page
     public int missing_page(List<String> MenusJPNs, List<String> MenusENGs) {
         // New menu JPN
-        List<String> MenusJPNs_ALL = new ArrayList<>();
+        List<String> MenusJPNs_ALL;
 
         // New menu ENG
-        List<String> MenusENGs_ALL = new ArrayList<>();
+        List<String> MenusENGs_ALL;
 
         // Parent menu for each column
         // ALL ENGJPN
@@ -137,11 +137,10 @@ public class Test_vsDATA_JE {
                 "Users", "High Availability", "Security Services", "DNS Security", "AppFlow", "Network Access Control", "Log"
         };
 
-        // ------------------------------------------------------------------------------------------------------------------------------
         // Mark ">" JPN
         List<String> MenusJPNs_temp = new ArrayList<>();
         for (int i = 0; i < MenusJPNs.size(); i++) {
-            String[] MenusJPN_box = null;
+            String[] MenusJPN_box;
             String MenusJPN_temp = MenusJPNs.get(i);
             int iTemp = i;
             int iMenu = 0;
@@ -176,7 +175,7 @@ public class Test_vsDATA_JE {
         // Mark ">" ENG
         List<String> MenusENGs_temp = new ArrayList<>();
         for (int i = 0; i < MenusENGs.size(); i++) {
-            String[] MenusENG_box = null;
+            String[] MenusENG_box;
             String MenusENG_temp = MenusENGs.get(i);
             int iTemp = i;
             int iMenu = 0;

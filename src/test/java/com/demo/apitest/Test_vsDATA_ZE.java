@@ -27,8 +27,8 @@ public class Test_vsDATA_ZE {
     private int match = 0;
     private ExtentReports exReport;
     private ExtentTest exTest;
-    private List<String> MenusMiss_ZHT = new ArrayList<>();
-    private List<String> MenusMiss_ENG = new ArrayList<>();
+    private final List<String> MenusMiss_ZHT = new ArrayList<>();
+    private final List<String> MenusMiss_ENG = new ArrayList<>();
 
     // Import data only (info ZHT)
     public List<String> info_ZHT() throws IOException {

@@ -110,8 +110,8 @@ public class Test_NavData_ENG {
         }
 
         // [A]Switch to Classic Mode
-        mf.js_click(mf.wait_element("xpath", Data_JPN.AD_path, "AD icon"));
-        mf.js_click(mf.wait_element("xpath", Data_JPN.old_path, "Classic option"));
+        mf.js_click(mf.wait_element("xpath", Data_ENG.AD_path, "AD icon"));
+        mf.js_click(mf.wait_element("xpath", Data_ENG.old_path, "Classic option"));
 
         // [D]Create data >> Excel
         mf.create_data();
