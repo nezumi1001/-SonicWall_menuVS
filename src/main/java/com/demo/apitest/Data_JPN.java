@@ -8,12 +8,12 @@ public class Data_JPN {
 
     // Box info
 //    public static String baseUrl = "https://10.103.50.65"; // TZ 270W
-    public static String baseUrl = "https://10.8.162.154"; // NSA 2700
+    public static String baseUrl = "https://10.8.162.156"; // NSA 2700
 
     // ChromeDriver Settings
     public static File my_path = new File(System.getProperty("user.dir"));
     public static String[] chromeDriver_data = {"webdriver.chrome.driver",
-            my_path.getParent() + "\\SonicWall_menuVS\\src\\main\\resources\\Driver\\chromedriver.exe"};
+            my_path.getParent() + "\\Driver\\chromedriver.exe"};
     public static String Chrome_userData = "--user-data-dir=C:\\Users\\wodem\\AppData\\Local\\Google\\Chrome\\User Data2";
 
     // Preempt
@@ -146,8 +146,8 @@ public class Data_JPN {
             {"ポリシー監視", "Policies"},
             // ==============================================
             {"Cloud Secure Edge", "Cloud Secure Edge"},
-            {"Status", "Status"},
-            {"Access Settings", "Access Settings"},
+            {"状況", "Status"},
+            {"アクセス設定", "Access Settings"},
             // ==============================================
             {"スイッチ ネットワーク", "Switch Network"},
             {"概要", "Overview"},

@@ -10,7 +10,7 @@ public class Data_ENG {
     // ChromeDriver Settings
     public static File my_path = new File(System.getProperty("user.dir"));
     public static String[] chromeDriver_data = {"webdriver.chrome.driver",
-            my_path.getParent() + "\\SonicWall_menuVS\\src\\main\\resources\\Driver\\chromedriver.exe"};
+            my_path.getParent() + "\\Driver\\chromedriver.exe"};
     public static String Chrome_userData = "--user-data-dir=C:\\Users\\wodem\\AppData\\Local\\Google\\Chrome\\User Data3";
 
     // Preempt
