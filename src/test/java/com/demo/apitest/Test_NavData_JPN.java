@@ -3,6 +3,7 @@ package com.demo.apitest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -10,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,7 @@ public class Test_NavData_JPN {
     private Func_JPN mf;
     private WebDriver driver;
     private int Preempt;
+    private ChromeDriverService service = new ChromeDriverService.Builder().usingDriverExecutable(new File(Data_JPN.chromeDriver_data[1])).usingAnyFreePort().build();
 
     @BeforeClass
     public void beforeClass() {
@@ -105,7 +108,7 @@ public class Test_NavData_JPN {
     @Test
     public void test_Step02_MenuTop_JPN() throws Exception {
         List<String> actualData;
-        String[] topMenus = { "HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY" };
+        String[] topMenus = {"HOME", "MONITOR", "DEVICE", "NETWORK", "OBJECT", "POLICY"};
         // [A]Switch to "Non-Config" mode
         if (Preempt == 0) {
             mf.js_click(mf.wait_element("xpath", Data_JPN.Config_path, "Config"));
@@ -163,6 +166,7 @@ public class Test_NavData_JPN {
     public void afterClass() throws InterruptedException {
         Thread.sleep(3000);
         driver.quit();
+        service.stop();
         mf.close_exReport();
     }
 }
