@@ -4,8 +4,8 @@ import java.io.File;
 
 public class Data_ENG {
     // Box info
-//	public static String baseUrl = "https://10.103.50.140"; // TZ 370W
-	public static String baseUrl = "https://10.8.162.183"; // TZ 570P
+	public static String baseUrl = "https://10.103.50.194"; // TZ 370W
+//	public static String baseUrl = "https://10.8.162.172"; // TZ 570P
 
     // ChromeDriver Settings
     public static File my_path = new File(System.getProperty("user.dir"));

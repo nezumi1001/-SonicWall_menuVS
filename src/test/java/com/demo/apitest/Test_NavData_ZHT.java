@@ -3,7 +3,6 @@ package com.demo.apitest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -11,7 +10,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +18,7 @@ public class Test_NavData_ZHT {
     private Func_ZHT mf;
     private WebDriver driver;
     private int Preempt;
-    private ChromeDriverService service = new ChromeDriverService.Builder().usingDriverExecutable(new File(Data_ZHT.chromeDriver_data[1])).usingAnyFreePort().build();
+//    private ChromeDriverService service = new ChromeDriverService.Builder().usingDriverExecutable(new File(Data_ZHT.chromeDriver_data[1])).usingAnyFreePort().build();
 
     @BeforeClass
     public void beforeClass() {
@@ -159,7 +157,7 @@ public class Test_NavData_ZHT {
     public void afterClass() throws InterruptedException {
         Thread.sleep(3000);
         driver.quit();
-        service.stop();
+//        service.stop();
         mf.close_exReport();
     }
 }

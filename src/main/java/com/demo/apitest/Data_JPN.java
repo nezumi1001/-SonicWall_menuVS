@@ -7,8 +7,8 @@ public class Data_JPN {
     public static int check_list = 1;
 
     // Box info
-//    public static String baseUrl = "https://10.103.50.65"; // TZ 270W
-    public static String baseUrl = "https://10.8.162.156"; // NSA 2700
+    public static String baseUrl = "https://10.103.50.99"; // TZ 270W
+//    public static String baseUrl = "https://10.8.162.174"; // NSA 2700
 
     // ChromeDriver Settings
     public static File my_path = new File(System.getProperty("user.dir"));
@@ -62,9 +62,9 @@ public class Data_JPN {
             {"アクセス ポイント", "Access Points"},
             // ==============================================
             {"監視", "Monitor"}, // Fix Top-menu
-            {"リアルタイム監視", "Real-Time Monitor"},
+            {"リアルタイム監視", "Real Time Monitor"}, // Gen8
             {"AppFlow 監視", "AppFlow Monitor"},
-            {"AppFlow 報告", "AppFlow Reports"},
+            {"AppFlow 報告", "AppFlow Report"}, // Gen8
             {"脅威ログ", "Threat Logs"},
             {"ユーザ監視", "User Monitor"},
             {"帯域幅管理監視", "BWM Monitor"},
@@ -105,7 +105,7 @@ public class Data_JPN {
             {"グリッド確認", "GRID Check"},
             {"URL 格付け要求", "URL Rating Request"},
             {"PMTU 検出", "PMTU Discovery"},
-            {"スイッチ診断", "Switch Diagnostics"},
+            {"スイッチ診断", "Switch Diagnostics"}, // Gen8
             // ==============================================
             {"ネットワーク", "Network"},
             {"インターフェース", "Interfaces"},
@@ -127,7 +127,7 @@ public class Data_JPN {
             {"DHCP サーバ", "DHCP Server"},
             {"IP ヘルパー", "IP Helper"},
             {"ウェブ プロキシ", "Web Proxy"},
-            {"PoE 設定", "PoE Settings"},
+            {"PoE 設定", "PoE Settings"}, // POE
             {"動的 DNS", "Dynamic DNS"},
             {"ネットワーク監視", "Network Monitor"},
             {"AWS 設定", "AWS Configuration"},
@@ -138,12 +138,12 @@ public class Data_JPN {
             {"リンク統合", "Link Aggregation"},
             {"ポート ミラーリング", "Port Mirroring"},
             // ==============================================
-            {"SDWAN", "SD-WAN"},
+            {"SDWAN", "SDWAN"}, // Gen8
             {"グループ", "Groups"},
             {"SLA プローブ", "SLA Probes"},
             {"SLA クラス オブジェクト", "SLA Class Objects"},
             {"パス選択プロファイル", "Path Selection Profiles"},
-            {"ポリシー監視", "Policies"},
+            {"ポリシー監視", "Policy Monitor"}, // Gen8
             // ==============================================
             {"Cloud Secure Edge", "Cloud Secure Edge"},
             {"状況", "Status"},
@@ -278,14 +278,14 @@ public class Data_JPN {
             {"AppFlow", "AppFlow"},
             {"フロー報告", "Flow Reporting"},
             {"AppFlow エージェント", "AppFlow Agent"},
-            {"リアルタイム監視", "Real-Time Monitor"},
+            {"リアルタイム監視", "Real Time Monitor"}, // Gen8
             {"AppFlow 監視", "AppFlow Monitor"},
-            {"AppFlow 報告", "AppFlow Reports"},
+            {"AppFlow 報告", "AppFlow Report"}, // Gen8
             {"キャプチャ脅威評価", "Capture Threat Assessment"},
             // ==============================================
             {"ネットワーク アクセス制御", "Network Access Control"},
             {"設定", "Settings"},
-            {"AppFlow セッション", "Sessions"},
+            {"AppFlow セッション", "AppFlow Sessions"}, // Gen8
             // ==============================================
             {"ログ", "Log"},
             {"監視", "Monitor"},
@@ -294,7 +294,7 @@ public class Data_JPN {
             {"自動化", "Automation"},
             {"名前解決", "Name Resolution"},
             {"レポート", "Reports"},
-            {"監査ログ", "Auditing Records"},
+            {"監査ログ", "Auditing Logs"}, // Gen8
             {"AWS ログ", "AWS Logs"},
 
     };
